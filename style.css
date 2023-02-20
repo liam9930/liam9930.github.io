@@ -2,10 +2,12 @@ body{
   width:100%;
   height:auto;
   margin: 0;
-  background-image: linear-gradient( 115deg, rgba(210, 126, 30, 0.167), rgba(237, 112, 63, 0.158) ),url("bg.png");
-  background-size: cover;
+  background-image: linear-gradient( 115deg, rgba(110, 70, 25, 0.838), rgba(237, 112, 63, 0.158) ),url("bg.png");
+  background-size: 110%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:center;
+
+  
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
