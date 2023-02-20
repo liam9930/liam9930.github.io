@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Survey Form</title>
+<link rel="stylesheet" href=styles.css>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+</head>
+<body>
+    <header>
+<h1 id="title">威仔吉他學習調查</h1>
+<p id="description">感謝你撥空，有你的回覆我們將會更好</p>
+</header>
+<form id="survey-form">
+    <div>
+    <label for="name" id="name-label">姓名(Name)</label>
+    <input id="name" type="text" placeholder="輸入您的姓名姓名" required>
+    </div>
+    <div>
+    <label for="email" id="email-label">Email</label>
+    <input id="email" type="email"placeholder="輸入您的email" required> <br>
+    </div>
+    <div>
+    <label for="number" id="number-label">年齡(age)</label>
+    <input id="number" type="number"placeholder="Age" max="100" min="1"> <br>
+    </div>
+    <div>
+    <label>請輸入您通常可以排課時間</label>
+    <select id="dropdown">
+        <option selected disabled>Select current rule</option>
+        <option value="student">平日上午</option>
+        <option value="fullTimeJob">平日下午</option>
+        <option value="fullTimeJob">平日晚上</option>
+        <option value="student">假日上午</option>
+        <option value="fullTimeJob">假日下午</option>
+        <option value="fullTimeJob">假日晚上</option>
+    </select>
+    </div>
+    <div>
+    <label>您會不會推薦威仔老師給你的朋友呢?</label>
+    <input type="radio" value="definitely" name="recommend" class="inline">一定會<br>
+    <input type="radio" value="maybe" name="recommend"
+    class="inline">也許會<br>
+    <input type="radio" value="not-sure" name="recommend"
+    class="inline">不會<br>
+    </div>
+    <div>
+        <label>你覺得威仔老師的吉他課上有什麼是需要改進的(請看完以下所有選項)
+        </label>
+        <input type="checkbox" value="Front-end Projects" class="inline">講義內容<br>
+        <input type="checkbox" value="Back-end Projects" class="inline">授課的方式<br>
+        <input type="checkbox" value="Data Visualization" class="inline">講課的速度<br>
+        <input type="checkbox" value="Challenges" class="inline">給學生的功課<br>
+        <input type="checkbox" value="Open Source Community" class="inline">錄影內容<br>
+        <input type="checkbox" value="Gitter help rooms" class="inline">上課地點<br>
+        <input type="checkbox" value="Gitter help rooms" class="inline">教室使用吉他狀況<br>
+    </div>
+    <div>
+       <label> 還有其他建議嗎?</label>
+    <textarea>Enter your comment here....
+    </textarea>
+    </div>
+    <input type="submit" id="submit" value="送出">
+
+</form>
+
+</body>
+</html>
