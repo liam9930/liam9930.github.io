@@ -2,12 +2,18 @@ body{
   width:100%;
   height:auto;
   margin: 0;
-  background: linear-gradient(to bottom, #5d5d90 0%, #1f1d60 100%);
+  background-image: linear-gradient( 115deg, rgba(210, 126, 30, 0.167), rgba(237, 112, 63, 0.158) ),url("bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   color: white;
+  z-index: -1;
+  top:0;
+  left:0;
 }
 h1, p {
   margin: 1px auto 0px auto;
