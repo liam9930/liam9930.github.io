@@ -613,13 +613,13 @@ body {
     padding-bottom: 80px;
     justify-content: space-between;
 
-    .title a{
+    .title>a{
         font-weight: 900;
         font-size: 80px;
         line-height: 120%;
         text-decoration: none;
         color: #fff;
-        a:hover{
+        &:hover{
             color: #cdcdcd;
         }
     }

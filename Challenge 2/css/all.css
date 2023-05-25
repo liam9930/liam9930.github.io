@@ -754,14 +754,14 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.bannerBottom .title a {
+.bannerBottom .title > a {
   font-weight: 900;
   font-size: 80px;
   line-height: 120%;
   text-decoration: none;
   color: #fff;
 }
-.bannerBottom .title a a:hover {
+.bannerBottom .title > a:hover {
   color: #cdcdcd;
 }
 .bannerBottom .logo-container {
