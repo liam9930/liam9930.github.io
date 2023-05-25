@@ -95,6 +95,14 @@ body {
     line-height: 120%;
     border-radius: 16px;
     padding: 20px 40px 20px 40px;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+        span{
+            background-color: #fff;
+        color: #000;
+        }
+    }
 
 }
 
@@ -135,6 +143,11 @@ body {
         font-size: 16px;
         line-height: 150%;
         margin-left: 20px;
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+            color:#cdcdcd;
+        }
     }
 
     .select-icon {
@@ -566,10 +579,10 @@ body {
         border-radius: 16px;
     }
     a:hover{
-        background-color: #000;
-        color: #fff;
+        background-color: #cdcdcd;
+        color: #000;
         span{
-            color:#fff ;
+            color:#000 ;
         }
     }
 
@@ -600,10 +613,15 @@ body {
     padding-bottom: 80px;
     justify-content: space-between;
 
-    .title {
+    .title a{
         font-weight: 900;
         font-size: 80px;
         line-height: 120%;
+        text-decoration: none;
+        color: #fff;
+        a:hover{
+            color: #cdcdcd;
+        }
     }
 
     .logo-container {

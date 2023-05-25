@@ -240,6 +240,14 @@ body {
   border-radius: 16px;
   padding: 20px 40px 20px 40px;
 }
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.btn:hover span {
+  background-color: #fff;
+  color: #000;
+}
 
 .btn.btn-white {
   border-color: #F2F2F2;
@@ -279,6 +287,11 @@ body {
   font-size: 16px;
   line-height: 150%;
   margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.header .item:hover {
+  color: #cdcdcd;
 }
 .header .select-icon {
   display: none;
@@ -707,11 +720,11 @@ body {
   border-radius: 16px;
 }
 .page-list a:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: #cdcdcd;
+  color: #000;
 }
 .page-list a:hover span {
-  color: #fff;
+  color: #000;
 }
 
 @media (max-width: 992px) {
@@ -741,10 +754,15 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.bannerBottom .title {
+.bannerBottom .title a {
   font-weight: 900;
   font-size: 80px;
   line-height: 120%;
+  text-decoration: none;
+  color: #fff;
+}
+.bannerBottom .title a a:hover {
+  color: #cdcdcd;
 }
 .bannerBottom .logo-container {
   width: 244.99px;
