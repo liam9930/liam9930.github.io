@@ -249,6 +249,11 @@ body {
   line-height: 150%;
 }
 
+@media (max-width: 767px) {
+  .btn.btn-white {
+    padding-right: 32px;
+  }
+}
 .header {
   border-bottom: 1px solid #fff;
   -webkit-box-align: center;
@@ -466,8 +471,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 40px;
+  padding-left: 40px;
   padding-bottom: 30px;
 }
 .AiTool-container .title {
@@ -497,6 +502,11 @@ body {
 }
 
 @media (max-width: 767px) {
+  .AiTool-container {
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 12px;
+  }
   .AiTool-container .title {
     font-size: 32px;
   }
@@ -590,6 +600,13 @@ body {
   overflow: hidden;
   cursor: pointer;
   margin-bottom: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .card:hover .image {
   -webkit-transform: scale(1.3);
@@ -623,12 +640,11 @@ body {
   font-size: 20px;
   line-height: 120%;
   margin-bottom: 12px;
-  height: 24px;
 }
 
 .tool-content {
   font-size: 14px;
-  max-height: 42px;
+  min-height: 42px;
 }
 
 .card-container .model-name {
