@@ -1,0 +1,54 @@
+.sloganBottom {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.sloganBottom span {
+  color: white;
+}
+
+.bannerBottom {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bannerBottom .title > a {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 120%;
+  text-decoration: none;
+  color: #fff;
+}
+.bannerBottom .title > a:hover {
+  color: #cdcdcd;
+}
+.bannerBottom .logo-container {
+  width: 244.99px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .bannerBottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bannerBottom .title-wrap {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .bannerBottom .logo-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 40px;
+  }
+}

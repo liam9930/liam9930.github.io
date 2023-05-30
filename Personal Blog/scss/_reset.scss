@@ -134,3 +134,16 @@ table {
 	border-spacing: 0;
 }
 
+/* rwd ing css,可以當作css Reset其中一個*/
+img {
+	width: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/*全域border-box*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}

@@ -1,0 +1,144 @@
+/* rwd ing css,可以當作css Reset其中一個*/
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*全域border-box*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Noto Sans TC',sans-serif;;
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+@media(max-width:767px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+}
+
+.content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    
+    &:hover {
+        color: #cdcdcd;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+@media(max-width:767px) {
+    .container {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+}
+
+
+.mt-160 {
+    margin-top: 160px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+/*需要思考一下原本160邊界變成120邊界*/
+@media(max-width:767px) {
+    .mt-160 {
+        margin-top: 120px;
+    }
+}
+
+.li-layout {
+    width: 32.1%;
+    height: auto;
+}
+
+@media(max-width:767px) {
+    .li-layout {
+        width: 93.6%;
+        margin-bottom: 12px;
+    }
+}
+
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 16px;
+    padding: 20px 40px 20px 40px;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+
+        span {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+
+}
+
+.btn.btn-white {
+    border-color: #F2F2F2;
+    background: #fff;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+@media(max-width:767px) {
+    .btn.btn-white {
+        padding-right: 32px;
+    }
+}

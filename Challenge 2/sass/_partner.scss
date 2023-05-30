@@ -1,0 +1,118 @@
+.partner-container {
+    .subtitle {
+        margin-bottom: 80px;
+    }
+
+    .swiper-slide {
+        width: 14.29%;
+    }
+
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+
+    }
+    .logo-bar{
+        position: relative;
+        .left-hidden,.right-hidden{
+            position: absolute;
+            top:0px;
+            width:196px;
+            height:100%;
+            z-index: 50;
+        }
+        .left-hidden{
+            left:0;
+            background:linear-gradient(to right,rgb(0, 0, 0, 1),rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0));
+        }
+        .right-hidden{
+            right:0;
+            background:linear-gradient(to left,rgb(0, 0, 0, 1),rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0));
+            
+        }
+    }
+    
+
+    
+}
+
+
+@media(max-width:767px) {
+    .partner-container {
+        margin-bottom: 48px;
+
+        .swiper-slide {
+            width: 33.33%;
+        }
+    }
+}
+
+.comment-list,
+.swiper-slide {
+    justify-content: space-between;
+
+    .comment {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+    }
+
+    .img-container {
+        width: 96px;
+        height: 16px;
+    }
+
+    .comment-text {
+        margin-bottom: 50px;
+    }
+}
+
+.swiper.swiper-comment {
+    width: 97%;
+    display: none;
+}
+
+@media(max-width:767px) {
+    .comment-list {
+        display: none;
+    }
+
+    .swiper.swiper-comment {
+        display: block;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #525252 !important;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #fff !important;
+    }
+}
+
+.person-container {
+    .person-image {
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+    }
+
+    .person-name {
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    .person-company {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+}
+
+@media(max-width:767px) {
+    .comment-list {
+        flex-wrap: wrap;
+    }
+}

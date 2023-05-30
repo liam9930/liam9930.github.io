@@ -1,0 +1,31 @@
+.slogan-container {
+    margin-top: 40px;
+    .slogan {
+        font-weight: 900;
+        font-size: 120px;
+    }
+
+    .animate-container {
+        margin-top: 50px;
+        justify-content: end;  
+    }
+
+    .tree-logo {
+        width:540px;
+    }
+}
+@media(max-width:767px) {
+    .slogan-container {
+        .slogan {
+            font-size: 48px;
+        }
+
+        .anamate-container {
+            justify-content: center;
+            width:100%;
+        }
+        .tree-logo {
+            width:100%;
+        }
+    }
+}

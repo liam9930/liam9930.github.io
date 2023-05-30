@@ -1,0 +1,42 @@
+.sloganBottom {
+    flex-direction: column;
+    text-align: center;
+
+    span {
+        color: white;
+
+    }
+}
+
+.bannerBottom {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+
+    .title>a{
+        font-weight: 900;
+        font-size: 80px;
+    }
+
+    .logo-container {
+        width: 244.99px;
+        height: 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .bannerBottom {
+        flex-direction: column;
+
+        .title-wrap {
+            order: 2;
+        }
+
+        .logo-container {
+            order: 1;
+            margin-bottom: 40px;
+        }
+    }
+}

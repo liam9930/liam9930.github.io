@@ -1,0 +1,45 @@
+.service-container {
+    flex-direction: column;
+    justify-content: space-between;
+    
+    .title-container {
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    .subtitle{
+        flex: 1;
+    }
+    .title{
+        flex:2;
+    }
+}
+
+@media(max-width:767px){
+    .service-container 
+    .title-container {
+        flex-direction: column;
+        .subtitle{
+            margin-bottom: 24px;
+        }
+    }
+
+}
+
+.service-list {
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .service {
+        padding: 80px 40px 80px 40px;
+        border: 1px solid #525252;
+        border-radius: 16px;
+        span{
+            color:#fff;
+            font-size: 80px;           
+        }
+    }
+
+    .service-title {
+        margin: 20px 0px;
+    }
+}

@@ -1,0 +1,563 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Kalam:wght@300;400&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Playfair+Display:wght@400;500;600;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* rwd ing css,可以當作css Reset其中一個*/
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+/*全域border-box*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+.bd-1 {
+  border: 1px solid #000;
+}
+
+.mY-50 {
+  margin: 50px 0;
+}
+
+.m0-auto {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title-style {
+  font-size: 22px;
+  letter-spacing: 0.5em;
+}
+
+.time-font-style {
+  font-size: 11px;
+}
+
+.aside-w {
+  width: 289px;
+}
+
+.btn {
+  background-color: #6600ea;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+  padding: 14px 30px 14px 30px;
+}
+.btn:hover {
+  background-color: #000;
+}
+
+.content {
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 10px;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+.header-subtitle {
+  font-family: "Inter";
+  font-size: 21px;
+  letter-spacing: 0.45em;
+  padding-top: 55px;
+  padding-bottom: 22px;
+}
+.header-title {
+  font-family: "Playfair Display";
+  font-size: 107px;
+  font-weight: 400;
+}
+.header-title a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navlist {
+  font-family: "Inter";
+  font-size: 14px;
+  width: 95vw;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.navlist-item > a {
+  display: block;
+  padding: 20px 60px 20px 60px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+}
+.navlist-item > a:hover {
+  color: #6600ed;
+}
+
+.item-layout {
+  width: 167px;
+  border-left: 1px solid #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-item input {
+  width: 75%;
+  border: none;
+  outline: none;
+}
+
+.link-item {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-right: 1px solid #000;
+}
+.link-item i {
+  font-size: 19px;
+  color: #000;
+}
+
+.fearuredPost {
+  width: 50%;
+  position: relative;
+  border: 1px black solid;
+  margin: 113px auto 99px auto;
+}
+.fearuredPost-title {
+  position: absolute;
+  top: -30px;
+  left: -1px;
+  border: 1px black solid;
+  background-color: #fff;
+  padding: 10px 50px;
+  text-align: center;
+}
+.fearuredPost-image {
+  max-width: 100%;
+  overflow: hidden;
+}
+.fearuredPost .textwrap {
+  margin: 40px 30px 30px 30px;
+}
+.fearuredPost .articleTitle {
+  font-size: 27px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+.fearuredPost .content {
+  font-size: 14px;
+}
+
+.newpostMail {
+  width: 95%;
+  margin: 0 auto;
+  height: 214px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.newpostMail .title {
+  font-size: 28px;
+  margin-right: 30%;
+}
+.newpostMail .text {
+  font-size: 10px;
+  line-height: 1.2;
+}
+.newpostMail .inputbox {
+  width: 270px;
+  height: 43px;
+}
+.newpostMail .subscribe-btn {
+  background-color: #6600ea;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 30px 14px 30px;
+}
+.newpostMail .subscribe-btn:hover {
+  background-color: #000;
+}
+
+.list-section {
+  width: 62%;
+  border-right: 1px solid #000;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.list-section .list-container {
+  margin: 0 auto;
+  width: 577px;
+}
+.list-section .card {
+  margin-bottom: 34px;
+}
+.list-section .image-container {
+  width: 280px;
+}
+.list-section .article {
+  width: 300px;
+  padding: 36px 30px 28px 31px;
+}
+.list-section .list-title {
+  margin: 71px 0px;
+}
+.list-section .articleTitle {
+  margin: 30px 0px;
+  font-size: 24px;
+}
+.list-section .content {
+  height: 117px;
+}
+.list-section .article-info {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  font-size: 12px;
+  border-top: 1px solid #ccc;
+}
+.list-section .article-info .icon {
+  color: #e84a43;
+  margin-left: 5px;
+}
+.list-section .article-info .views {
+  margin-right: 30px;
+}
+
+.btn-container {
+  margin-top: 60px;
+  width: 577px;
+}
+.btn-container .morePosts-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.aside {
+  width: 38%;
+}
+
+.aboutMe {
+  width: 289px;
+}
+.aboutMe .title {
+  margin: 84px 0px;
+}
+.aboutMe .image-container {
+  height: 283px;
+  overflow: hidden;
+  border: #000 1px solid;
+}
+.aboutMe .content {
+  margin: 50px 0px;
+}
+.aboutMe .readMeLink {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.followMe .title {
+  border-top: 1px solid #000;
+  padding: 69px 0pc 69px 0px;
+}
+.followMe .menu {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.followMe .image-container {
+  width: 50%;
+  height: auto;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.followMe .image-container a {
+  display: none;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-right: 10px solid #ffffff;
+  border-bottom: 10px solid #ffffff;
+}
+.followMe .image-container:hover a {
+  display: block;
+}
+
+.aside .link-item {
+  margin-top: 40px;
+  border-right: none;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 20px 0px;
+}
+
+.subscrbe-container .title {
+  margin: 60px 0px;
+}
+.subscrbe-container .input {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #df1717;
+  margin-bottom: 30px;
+}
+.subscrbe-container .btn {
+  display: block;
+  width: 100%;
+}
+
+.mypick .title-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.mypick .title {
+  white-space: nowrap;
+  margin-top: 1em;
+}
+
+.dropMeALine {
+  border-top: 1px solid #000;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dropMeALine i {
+  font-size: 60px;
+  color: #000;
+}
+.dropMeALine .svg-container {
+  width: auto;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.dropMeALine .feedbackInfo {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: start;
+  width: 740px;
+  margin-top: 50px;
+  margin-bottom: 81px;
+}
+.dropMeALine .name, .dropMeALine .email, .dropMeALine .message {
+  width: 100%;
+  margin-top: 20px;
+}
+.dropMeALine .firstName, .dropMeALine .lastName {
+  width: 50%;
+}
+.dropMeALine .firstName {
+  margin-right: 30px;
+}
+.dropMeALine input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.dropMeALine .btn {
+  width: 256px;
+}
+
+.footer {
+  margin-top: 81px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #e8e6e8;
+}
