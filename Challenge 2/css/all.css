@@ -154,6 +154,7 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   color: #FFFFFF;
   line-height: 1.2;
+  padding: 0 15px;
 }
 
 h2 {
@@ -200,7 +201,7 @@ a:hover {
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 1326px;
   margin: 0 auto;
 }
 
@@ -350,10 +351,56 @@ a:hover {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.slogan-container .tree-logo {
-  width: 540px;
+.slogan-container .leaf-container {
+  position: relative;
+  overflow: hidden;
+}
+.slogan-container .leaf {
+  width: 180px;
+  height: 180px;
+  display: block;
+  position: relative;
+  -webkit-animation: moveCenterToUp 5s infinite;
+          animation: moveCenterToUp 5s infinite;
+}
+.slogan-container .a-delay-1 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.slogan-container .a-delay-2 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
+@-webkit-keyframes moveCenterToUp {
+  0% {
+    top: 200px;
+  }
+  40% {
+    top: 0;
+  }
+  60% {
+    top: 0;
+  }
+  100% {
+    top: -200px;
+  }
+}
+
+@keyframes moveCenterToUp {
+  0% {
+    top: 200px;
+  }
+  40% {
+    top: 0;
+  }
+  60% {
+    top: 0;
+  }
+  100% {
+    top: -200px;
+  }
+}
 @media (max-width: 767px) {
   .slogan-container .slogan {
     font-size: 48px;
@@ -494,6 +541,7 @@ a:hover {
 }
 
 .swiper.swiper-comment {
+  margin-top: 48px;
   width: 97%;
   display: none;
 }
@@ -546,6 +594,8 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 30px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 .AiTool-container .title {
   text-align: center;

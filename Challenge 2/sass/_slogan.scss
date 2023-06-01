@@ -1,5 +1,6 @@
 .slogan-container {
     margin-top: 40px;
+
     .slogan {
         font-weight: 900;
         font-size: 120px;
@@ -7,13 +8,47 @@
 
     .animate-container {
         margin-top: 50px;
-        justify-content: end;  
+        justify-content: end;
     }
 
-    .tree-logo {
-        width:540px;
+    .leaf-container {
+        position: relative;
+        overflow: hidden;
     }
+
+    .leaf {
+        width:180px;
+        height:180px;
+        display: block;
+        position: relative;
+        animation: moveCenterToUp 5s infinite;
+    }
+
+    .a-delay-1 {
+        animation-delay: 0.5s;
+    }
+
+    .a-delay-2 {
+        animation-delay: 1s;
+    }
+
 }
+
+@keyframes moveCenterToUp{
+    0% {
+      top: 200px;
+    }
+    40% {
+      top: 0;
+    }
+    60%{
+      top: 0;
+    }
+    100% {
+      top: -200px;
+    }   
+  }
+
 @media(max-width:767px) {
     .slogan-container {
         .slogan {
@@ -22,10 +57,11 @@
 
         .anamate-container {
             justify-content: center;
-            width:100%;
+            width: 100%;
         }
+
         .tree-logo {
-            width:100%;
+            width: 100%;
         }
     }
 }
