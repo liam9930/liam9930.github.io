@@ -7,21 +7,24 @@
     }
 
     .animate-container {
-        margin-top: 50px;
-        justify-content: end;
+        margin-top: 100px;
+        justify-content: flex-end;
     }
 
     .leaf-container {
         position: relative;
         overflow: hidden;
+        
+       
+
     }
 
     .leaf {
-        width:180px;
-        height:180px;
+        flex:1;
         display: block;
         position: relative;
         animation: moveCenterToUp 5s infinite;
+        
     }
 
     .a-delay-1 {
@@ -58,10 +61,7 @@
         .anamate-container {
             justify-content: center;
             width: 100%;
-        }
-
-        .tree-logo {
-            width: 100%;
+            
         }
     }
 }
