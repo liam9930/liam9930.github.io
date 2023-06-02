@@ -1,0 +1,45 @@
+
+.dropMeALine{
+    border-top: 1px solid #000;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    i{
+        font-size: 60px;
+        color: #000;
+    }
+    .svg-container{
+        width: auto;
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .feedbackInfo{
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        width:740px;
+        margin-top: 50px;
+        margin-bottom: 81px;
+    }
+    .name,.email,.message{
+        width:100%;
+        margin-top: 20px;
+    }
+    .firstName,.lastName{
+        width:50%;
+    }
+
+    .firstName{
+        margin-right: 30px;
+    }
+    input{
+        width:100%;
+        height:50px;
+        border: none;
+        border-bottom: 1px solid #000;
+    }
+    .btn{
+        width: 256px;
+    }
+    
+}

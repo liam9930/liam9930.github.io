@@ -1,0 +1,62 @@
+
+$h1: "Playfair Display";
+$h3: "Inter";
+
+h2{
+    font-size: 38px;
+}
+
+.bd-1{
+    border: 1px solid #000;
+}
+
+.mY-50{
+    margin: 50px 0;
+}
+
+.m0-auto{
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+.section-title-style{
+    font-size: 22px;
+    letter-spacing: 0.5em;
+}
+
+.time-font-style{
+    font-size: 11px;
+}
+.aside-w{
+    width:289px;
+}
+
+.btn{
+    background-color: #6600ea;
+    display: block;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        width: 160px;
+        padding:14px 30px 14px 30px;
+        &:hover{
+            background-color: #000;
+        }
+}
+
+.content{
+    font-size: 15px;
+    line-height: 120%;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+body {
+    font-family: $h3;
+    font-size: 10px;
+}

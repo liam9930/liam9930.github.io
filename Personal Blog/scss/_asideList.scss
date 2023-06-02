@@ -1,0 +1,109 @@
+// 邊行
+.aside{
+    width:38%;
+}
+
+.aboutMe{
+    width: 289px;
+    .title{
+        margin: 84px 0px;
+
+    }
+    .image-container{
+        height: 283px;
+        
+        overflow: hidden;
+        border: #000 1px solid;
+       
+    }
+    .content{
+        margin:50px 0px;
+    }    
+    .readMeLink{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        
+    }
+
+}
+
+
+.followMe{
+    .title{
+        border-top: 1px solid #000;
+        padding: 69px 0pc 69px 0px;
+    }
+    .menu{
+        flex-wrap: wrap;
+    }
+    .image-container{
+        width: 50%;
+        height: auto;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        a{
+            display: none;
+            width:100%;
+            height:100%;
+            color: #fff;
+            position:absolute;
+            top:0;
+            left:0;
+            text-align: center;
+            padding-top: 40px;
+            background-color: rgba(0,0,0,0.3);
+            border-right: 10px solid #ffffff;
+            border-bottom: 10px solid #ffffff;
+        }
+        &:hover a{
+            display: block;
+        }
+        
+    } 
+    
+}
+
+.aside .link-item {
+    margin-top: 40px;
+    border-right: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px 0px;
+}  
+
+
+.subscrbe-container{
+    .title{
+        margin:60px 0px;
+    }
+    .input{
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        height: 50px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #df1717;
+        margin-bottom: 30px;
+    }
+    .btn{
+        display: block;
+        width:100%;
+        
+    }
+}
+
+.mypick{
+    .title-container{
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+    .title{
+        white-space:nowrap;
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,85 @@
+
+.list-section{
+    width:62%;
+    border-right: 1px solid #000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .list-container{
+        margin: 0 auto;
+        width:577px;
+    }
+    .card{
+        margin-bottom: 34px; 
+    }
+    .image-container{
+        width:280px;
+    }
+    .article{
+        width:300px;
+        padding:36px 30px 28px 31px;
+    }
+    .list-title{
+        margin:71px 0px
+    }
+    .articleTitle{
+        margin:30px 0px;
+        font-size: 24px;
+
+    }
+    .content{
+        height: 117px;
+    }
+    .article-info{
+        justify-content: space-between;
+        padding-top: 20px;
+        font-size: 12px;
+        border-top: 1px solid #ccc;
+
+        .icon{
+            color:#e84a43;
+            margin-left: 5px;
+        }
+        .views{
+            margin-right: 30px;
+        }
+    }
+
+}
+.btn-container{
+    margin-top: 60px;
+    width:577px;
+    .morePosts-btn{
+        display: block;
+        margin: 0 auto;
+    }
+}
+// 邊行
+.aside{
+    width:38%;
+}
+
+.aboutMe{
+    width: 289px;
+    .title{
+        margin: 84px 0px;
+
+    }
+    .image-container{
+        height: 283px;
+        
+        overflow: hidden;
+        border: #000 1px solid;
+       
+    }
+    .content{
+        margin:50px 0px;
+    }    
+    .readMeLink{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        
+    }
+
+}
