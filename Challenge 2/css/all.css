@@ -798,7 +798,7 @@ a:hover {
             align-items: center;
   }
   .card {
-    width: 351px;
+    width: 100%;
   }
   .card:hover .image {
     -webkit-transform: scale(1.3);
