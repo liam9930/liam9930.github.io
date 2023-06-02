@@ -21,11 +21,11 @@
             z-index: 50;
         }
         .left-hidden{
-            left:0;
+            left:-10px;
             background:linear-gradient(to right,rgb(0, 0, 0, 1),rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0));
         }
         .right-hidden{
-            right:0;
+            right:-10px;
             background:linear-gradient(to left,rgb(0, 0, 0, 1),rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0));
             
         }
