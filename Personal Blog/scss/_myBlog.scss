@@ -1,0 +1,99 @@
+.myBlog {
+    .myBlog-menu {
+        justify-content: flex-start;
+    }
+
+    .myBlog-menu .item {
+        align-items: center;
+
+    }
+
+    .btn-white {
+        height: 80px;
+
+    }
+
+
+}
+
+.card-list {
+    margin-bottom: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .card {
+        width: 454px;
+        border: 1px solid #000;
+        margin-bottom: 30px;
+
+        &:hover .title,
+        &:hover .content {
+            color: #6600ed;
+            cursor: pointer;
+        }
+
+    }
+
+    .content-container {
+        padding: 28px 30px 25px 30px;
+        opacity: auto;
+    }
+
+    .time-container {
+        justify-content: space-between;
+        margin-bottom: 12px;
+       
+    }
+
+    .time {
+        height: 34px;
+        align-items: center;
+        font-size: 12px;
+
+        .dot {
+            font-size: 18px;
+            text-align: center;
+            width: 18px;
+        }
+    }
+
+    .icon {
+        font-size: 19px;
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .content {
+        padding-bottom: 23px;
+    }
+    .share-container{
+        position: relative;
+    }
+
+    .sharePost {
+        position: absolute;
+        padding: 15px 20px 15px 20px;
+        border: 1px solid #000;
+        right: 20px;
+        background-color: #fff;
+        font-size: 16px;
+        box-shadow:0 3px 10px rgba(0,0,0,0.2);
+        display: none;
+        .text{
+            margin-left: 10px;
+            white-space:nowrap;
+        }
+    }
+
+
+
+}

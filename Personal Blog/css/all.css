@@ -163,6 +163,18 @@ h2 {
   margin: 50px 0;
 }
 
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .m0-auto {
   margin: 0 auto;
 }
@@ -198,9 +210,22 @@ h2 {
   background-color: #000;
 }
 
+.btn-white {
+  background: #fff;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btn-white:hover {
+  color: #6600ed;
+}
+.btn-white.selected {
+  color: #6600ed;
+}
+
 .content {
-  font-size: 15px;
-  line-height: 120%;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .d-flex {
@@ -209,9 +234,45 @@ h2 {
   display: flex;
 }
 
+.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.d-n {
+  display: none;
+}
+
 body {
   font-family: "Inter";
   font-size: 10px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.navlist-item > a {
+  display: block;
+  padding: 20px 60px 20px 60px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+}
+.navlist-item > a:hover {
+  color: #6600ed;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+a:hover {
+  color: #6600ed;
 }
 
 .header {
@@ -249,14 +310,7 @@ body {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
-.navlist-item > a {
-  display: block;
-  padding: 20px 60px 20px 60px;
-  white-space: nowrap;
-  text-decoration: none;
-  color: #000;
-}
-.navlist-item > a:hover {
+.navlist .selected {
   color: #6600ed;
 }
 
@@ -437,31 +491,6 @@ body {
   margin-bottom: 40px;
 }
 
-.aside {
-  width: 38%;
-}
-
-.aboutMe {
-  width: 289px;
-}
-.aboutMe .title {
-  margin: 84px 0px;
-}
-.aboutMe .image-container {
-  height: 283px;
-  overflow: hidden;
-  border: #000 1px solid;
-}
-.aboutMe .content {
-  margin: 50px 0px;
-}
-.aboutMe .readMeLink {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 40px;
-}
-
 .followMe .title {
   border-top: 1px solid #000;
   padding: 69px 0pc 69px 0px;
@@ -540,6 +569,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 70px;
 }
 .dropMeALine i {
   font-size: 60px;
@@ -581,4 +611,229 @@ body {
 }
 .dropMeALine .btn {
   width: 256px;
+}
+
+.footer {
+  margin-top: 81px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #e8e6e8;
+}
+
+.about {
+  margin: 50px auto 100px auto;
+  border: 1px solid #000;
+}
+.about .image {
+  width: 40%;
+  border-radius: 16px;
+}
+.about .image-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/06.jpg);
+  background-position: center;
+  border-bottom: 1px solid #000;
+}
+.about .content-container {
+  padding-left: 43px;
+  padding-right: 195px;
+}
+.about .title {
+  margin-top: 57px;
+  margin-bottom: 50px;
+}
+.about .content {
+  font-size: 17px;
+  line-height: 1.6em;
+  margin-bottom: 42px;
+}
+
+.myBlog .myBlog-menu {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.myBlog .myBlog-menu .item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.myBlog .btn-white {
+  height: 80px;
+}
+
+.card-list {
+  margin-bottom: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.card-list .card {
+  width: 454px;
+  border: 1px solid #000;
+  margin-bottom: 30px;
+}
+.card-list .card:hover .title, .card-list .card:hover .content {
+  color: #6600ed;
+  cursor: pointer;
+}
+.card-list .content-container {
+  padding: 28px 30px 25px 30px;
+  opacity: auto;
+}
+.card-list .time-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+}
+.card-list .time {
+  height: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+.card-list .time .dot {
+  font-size: 18px;
+  text-align: center;
+  width: 18px;
+}
+.card-list .icon {
+  font-size: 19px;
+}
+.card-list .icon:hover {
+  cursor: pointer;
+}
+.card-list .title {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.card-list .content {
+  padding-bottom: 23px;
+}
+.card-list .share-container {
+  position: relative;
+}
+.card-list .sharePost {
+  position: absolute;
+  padding: 15px 20px 15px 20px;
+  border: 1px solid #000;
+  right: 20px;
+  background-color: #fff;
+  font-size: 16px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.card-list .sharePost .text {
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.article {
+  border: 1px solid #000;
+  padding: 60px 100px 60px 100px;
+  font-size: 16px;
+}
+.article .time {
+  font-size: 14px;
+}
+
+.articleText {
+  line-height: 1.5;
+}
+.articleText .title {
+  font-family: "Playfair Display";
+  font-size: 40px;
+  margin-top: 27px;
+  font-weight: 700;
+}
+.articleText .subTitle {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.articleText .content {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.articleText .point {
+  font-style: italic;
+  font-size: 24px;
+  padding: 0px 10px;
+  border-left: 2px solid #6600ed;
+}
+.articleText .otherTitle {
+  font-weight: 700;
+  font-size: 22px;
+}
+.articleText .bottom {
+  margin-top: 70px;
+  border-top: 1px solid #999;
+}
+.articleText .icon, .articleText .myTop {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.articleText .icon {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.recentPosts .title-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.recentPosts .seeAll {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.postsMenu .post-item {
+  border: 1px solid #000;
+  width: 31%;
+}
+.postsMenu .post-item .title {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  padding: 18px;
+  font-weight: 700;
+}
+
+.select-item {
+  border: 1px solid #000;
+}
+.select-item .image-container {
+  width: 50%;
+  height: 340.5px;
+  overflow: hidden;
+}
+.select-item .image-container .image {
+  height: 100%;
+}
+
+.article-container {
+  width: 50%;
+  padding: 24px 36px;
+}
+.article-container .time {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+.article-container .title {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 500;
 }

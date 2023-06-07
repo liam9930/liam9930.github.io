@@ -2,15 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Kalam:wght@300;400&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Playfair+Display:wght@400;500;600;700&display=swap');
 // css reset
 @import "reset";
-
+//home page
 @import "global";
 @import "header";
 @import "nav";
-@import "_featuredPost";
+@import "featuredPost";
 @import "mail";
 @import "mainList";
 @import "asideList";
 @import "dropMeALine";
+@import "footer";
+//about page
+@import "about";
+@import "myBlog";
 
+//article page
+@import "article";
+
+//selection page
+@import "selection";
 
 

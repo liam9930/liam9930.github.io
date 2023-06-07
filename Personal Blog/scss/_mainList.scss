@@ -53,33 +53,3 @@
         margin: 0 auto;
     }
 }
-// 邊行
-.aside{
-    width:38%;
-}
-
-.aboutMe{
-    width: 289px;
-    .title{
-        margin: 84px 0px;
-
-    }
-    .image-container{
-        height: 283px;
-        
-        overflow: hidden;
-        border: #000 1px solid;
-       
-    }
-    .content{
-        margin:50px 0px;
-    }    
-    .readMeLink{
-        display: block;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-bottom: 40px;
-        
-    }
-
-}

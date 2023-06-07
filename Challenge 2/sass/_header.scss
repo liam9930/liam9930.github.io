@@ -1,16 +1,18 @@
-.header{
+.header {
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
     z-index: 10;
     border-bottom: 1px solid #fff;
 }
+
 .header-wrap {
     justify-content: space-between;
     align-items: center;
     height: 80px;
     
-    h1 a{       
+
+    h1 a {
         background-image: url(../image/Group\ 1.png);
         background-repeat: no-repeat;
         width: 244.99px;
@@ -19,43 +21,68 @@
         text-indent: 101%;
         white-space: nowrap;
     }
-
-    .item ,.drop-item{
+    .item,
+    .drop-item {
         font-weight: 700;
         margin-left: 20px;
     }
-    .icon{
+
+    .icon {
         font-size: 24px;
         padding: 8px;
-        color:white;
+        text-align: center;
+        color: white;
     }
 
     .dropdown {
         display: none;
-        position: relative;
+        &:hover .icon{
+            font-size: 26px;
+        }
+
+    }
+
+    .dropdown-open {
+        position: absolute;
+        top: 81px;
+        right: 0px;
+        width: 100%;
+        min-height: 100vh;
+        font-size: 80px;
+        background: #000;
+        display: none;
+        .drop-item {
+            padding: 10px 15px 10px 15px;
+        }
         
     }
-    .dropdown-open{
-        position:absolute;
-        top: 60px;
-        right:0px;
-        width: 110px;
+    .menuShow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-btn{
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+    }
+    .btn-close{
         display: none;
-        li{
-            border:1px solid #fff;
-            background-color: rgba(0,0,0,0.5);
-        }
-        .drop-item{
-            padding:10px 15px 10px 15px;
-        }
+    }
+    .btn-open{
+        display: block;
     }
 }
 
+
+
+
 @media(max-width:767px) {
     .header {
-        h1 a{
+        h1 a {
             width: 147px;
-            height:24px;
+            height: 24px;
             background-size: contain;
         }
 
