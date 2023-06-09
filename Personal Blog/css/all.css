@@ -4,6 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
 html,
 body,
 div,
@@ -151,12 +152,40 @@ img {
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "ChenYuluoyan";
+  src: url("/fonts/ChenYuluoyan-Thin-Monospaced.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GenYoMin";
+  src: url("/fonts/GenYoMin-B.ttc") format("truetype");
+}
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 h2 {
-  font-size: 38px;
+  font-size: 30px;
+}
+
+.title {
+  font-family: "GenYoMin";
 }
 
 .bd-1 {
   border: 1px solid #000;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
 }
 
 .mY-50 {
@@ -244,13 +273,21 @@ h2 {
   display: none;
 }
 
-body {
-  font-family: "Inter";
-  font-size: 10px;
+.ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fxd-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -269,7 +306,6 @@ a {
   display: block;
   text-decoration: none;
   color: #000;
-  text-align: center;
 }
 a:hover {
   color: #6600ed;
@@ -283,14 +319,15 @@ a:hover {
           flex-direction: column-reverse;
 }
 .header-subtitle {
-  font-family: "Inter";
-  font-size: 21px;
-  letter-spacing: 0.45em;
+  font-family: "GenYoMin";
+  font-size: 35px;
+  letter-spacing: 1em;
   padding-top: 55px;
   padding-bottom: 22px;
+  font-weight: 600;
 }
 .header-title {
-  font-family: "Playfair Display";
+  font-family: "GenYoMin";
   font-size: 107px;
   font-weight: 400;
 }
@@ -300,10 +337,9 @@ a:hover {
 }
 
 .navlist {
-  font-family: "Inter";
-  font-size: 14px;
+  font-family: "GenYoMin";
+  font-size: 20px;
   width: 95vw;
-  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -315,7 +351,6 @@ a:hover {
 }
 
 .item-layout {
-  width: 167px;
   border-left: 1px solid #000;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -329,6 +364,14 @@ a:hover {
   width: 75%;
   border: none;
   outline: none;
+  font-size: 20px;
+  height: 100%;
+  width: 164px;
+  padding-left: 10px;
+  font-family: "GenYoMin";
+}
+.search-item .icon {
+  margin-right: 10px;
 }
 
 .link-item {
@@ -336,6 +379,9 @@ a:hover {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-right: 1px solid #000;
+}
+.link-item a {
+  padding: 10px 15px;
 }
 .link-item i {
   font-size: 19px;
@@ -389,23 +435,29 @@ a:hover {
 }
 .newpostMail .title {
   font-size: 28px;
-  margin-right: 30%;
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+.newpostMail .mailInput {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .newpostMail .text {
   font-size: 10px;
   line-height: 1.2;
 }
 .newpostMail .inputbox {
-  width: 270px;
+  width: 300px;
   height: 43px;
 }
 .newpostMail .subscribe-btn {
-  background-color: #6600ea;
   font-size: 17px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding: 14px 30px 14px 30px;
+  padding: 14px 50px 14px 50px;
+  margin-left: 10px;
+  width: 35%;
 }
 .newpostMail .subscribe-btn:hover {
   background-color: #000;
@@ -421,13 +473,10 @@ a:hover {
   margin: 0 auto;
   width: 577px;
 }
-.list-section .card {
-  margin-bottom: 34px;
-}
-.list-section .image-container {
+.list-section .card .image-container {
   width: 280px;
 }
-.list-section .article {
+.list-section .card .article {
   width: 300px;
   padding: 36px 30px 28px 31px;
 }
@@ -439,7 +488,9 @@ a:hover {
   font-size: 24px;
 }
 .list-section .content {
-  height: 117px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .list-section .article-info {
   -webkit-box-pack: justify;
@@ -608,6 +659,12 @@ a:hover {
   height: 50px;
   border: none;
   border-bottom: 1px solid #000;
+  font-size: 20px;
+  outline: none;
+}
+.dropMeALine input:focus, .dropMeALine input:hover {
+  border-width: 2px;
+  border-color: #6600ed;
 }
 .dropMeALine .btn {
   width: 256px;
@@ -633,7 +690,6 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../img/06.jpg);
   background-position: center;
   border-bottom: 1px solid #000;
 }
@@ -644,28 +700,31 @@ a:hover {
 .about .title {
   margin-top: 57px;
   margin-bottom: 50px;
+  font-size: 36px;
 }
 .about .content {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.6em;
   margin-bottom: 42px;
 }
 
-.myBlog .myBlog-menu {
+.myBlog-menu {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  font-size: 14px;
 }
-.myBlog .myBlog-menu .item {
+.myBlog-menu .item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.myBlog .btn-white {
-  height: 80px;
+.myBlog-menu .btn-white {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.card-list {
+.myBlogcard-list {
   margin-bottom: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -673,55 +732,55 @@ a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.card-list .card {
+.myBlogcard-list .card {
   width: 454px;
   border: 1px solid #000;
   margin-bottom: 30px;
 }
-.card-list .card:hover .title, .card-list .card:hover .content {
+.myBlogcard-list .card:hover .title, .myBlogcard-list .card:hover .content {
   color: #6600ed;
   cursor: pointer;
 }
-.card-list .content-container {
+.myBlogcard-list .content-container {
   padding: 28px 30px 25px 30px;
   opacity: auto;
 }
-.card-list .time-container {
+.myBlogcard-list .time-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 12px;
 }
-.card-list .time {
+.myBlogcard-list .time {
   height: 34px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: 12px;
 }
-.card-list .time .dot {
+.myBlogcard-list .time .dot {
   font-size: 18px;
   text-align: center;
   width: 18px;
 }
-.card-list .icon {
+.myBlogcard-list .icon {
   font-size: 19px;
 }
-.card-list .icon:hover {
+.myBlogcard-list .icon:hover {
   cursor: pointer;
 }
-.card-list .title {
+.myBlogcard-list .title {
   font-size: 28px;
   margin-bottom: 15px;
   font-weight: 500;
 }
-.card-list .content {
+.myBlogcard-list .content {
   padding-bottom: 23px;
 }
-.card-list .share-container {
+.myBlogcard-list .share-container {
   position: relative;
 }
-.card-list .sharePost {
+.myBlogcard-list .sharePost {
   position: absolute;
   padding: 15px 20px 15px 20px;
   border: 1px solid #000;
@@ -732,17 +791,17 @@ a:hover {
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   display: none;
 }
-.card-list .sharePost .text {
+.myBlogcard-list .sharePost .text {
   margin-left: 10px;
   white-space: nowrap;
 }
 
-.article {
+.article-container {
   border: 1px solid #000;
   padding: 60px 100px 60px 100px;
   font-size: 16px;
 }
-.article .time {
+.article-container .time {
   font-size: 14px;
 }
 
@@ -750,7 +809,7 @@ a:hover {
   line-height: 1.5;
 }
 .articleText .title {
-  font-family: "Playfair Display";
+  font-family: "GenYoMin";
   font-size: 40px;
   margin-top: 27px;
   font-weight: 700;
@@ -805,7 +864,7 @@ a:hover {
   width: 31%;
 }
 .postsMenu .post-item .title {
-  font-family: "Playfair Display";
+  font-family: "GenYoMin";
   font-size: 18px;
   padding: 18px;
   font-weight: 700;
@@ -823,16 +882,16 @@ a:hover {
   height: 100%;
 }
 
-.article-container {
+.selection-container .article-container {
   width: 50%;
   padding: 24px 36px;
 }
-.article-container .time {
+.selection-container .article-container .time {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 12px;
 }
-.article-container .title {
+.selection-container .article-container .title {
   font-size: 26px;
   line-height: 1.2;
   font-weight: 500;

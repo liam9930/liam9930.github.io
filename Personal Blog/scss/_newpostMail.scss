@@ -1,0 +1,35 @@
+
+.newpostMail{
+    width:95%;
+    margin: 0 auto;
+    height: 214px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    .title{
+        font-size: 28px;
+        text-align: center;
+        flex-grow: 2;
+    }
+    .mailInput{
+        flex-grow: 1;
+    }
+    .text{
+        font-size: 10px;
+        line-height: 1.2;
+    }
+    .inputbox{
+        width: 300px;
+        height: 43px;
+    }
+    .subscribe-btn{
+        font-size: 17px;
+        padding:14px 50px 14px 50px;
+        margin-left: 10px;
+        width:35%;
+        &:hover{
+            background-color: #000;
+        }
+    }
+}

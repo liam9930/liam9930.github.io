@@ -1,6 +1,6 @@
 
 .list-section{
-    width:62%;
+    width:62% ;
     border-right: 1px solid #000;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -9,15 +9,15 @@
         width:577px;
     }
     .card{
-        margin-bottom: 34px; 
+        .image-container{
+            width:280px ;
+        }
+        .article{
+            width:300px ;
+            padding:36px 30px 28px 31px;
+        }
     }
-    .image-container{
-        width:280px;
-    }
-    .article{
-        width:300px;
-        padding:36px 30px 28px 31px;
-    }
+
     .list-title{
         margin:71px 0px
     }
@@ -27,7 +27,7 @@
 
     }
     .content{
-        height: 117px;
+        flex-grow: 1;
     }
     .article-info{
         justify-content: space-between;

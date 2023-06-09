@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="./css/all.css">
     <script src="https://kit.fontawesome.com/ed67e46fde.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="header" class="header d-flex">
-        <h1 class="header-title text-center"><a href="">Train of Thought</a></h1>
-        <h2 class="header-subtitle text-center">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</h2>
+        <h1 class="header-title text-center mt-20"><a href="">威仔吉他教學</a></h1>
+        <h2 class="header-subtitle text-center">持續激勵你對學習吉他的熱情</h2>
     </header>
     <nav class="nav">
         <ul class="navlist d-flex text-center">
-            <li class="navlist-item item-layout"><a href="#" class="selected">Home</a></li>
-            <li class="navlist-item item-layout"><a href="#">About</a></li>
-            <li class="navlist-item item-layout"><a href="#">My Blog</a></li>
-            <li class="navlist-item item-layout"><a href="#Contact">Contact</a></li>
+            <li class="navlist-item item-layout"><a href="./home.html" class="selected">Home</a></li>
+            <li class="navlist-item item-layout "><a href="./about.html">About</a></li>
+            <li class="navlist-item item-layout"><a href="./myBlog.html">My Blog</a></li>
+            <li class="navlist-item item-layout"><a href="./home.html#Contact">Contact</a></li>
             <li class="search-item d-flex item-layout">
-                <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass icon"></i>
             </li>
             <li class="link-item d-flex item-layout">
                 <a href="https://www.facebook.com/liam9930"><i class="fa-brands fa-facebook-f"></i></a>
@@ -33,213 +33,247 @@
         </ul>
     </nav>
     <section class="featuredPost">
-        <div class="featuredPost-title section-title-style">精選文章</div>
-        <div class="featuredPost-image">
-            <img src="./img/demo1.png" alt="" class="image">
-        </div>
-        <div class="textwrap">
-            <p class="time time-font-style">Mar 23
-                2 min</p>
-            <h2 class="articleTitle">威仔要來跟大家分享配件挑選的小撇步們～</h2>
-            <p class="content">弦（$150～$600）
-                當弦斷掉或生鏽時，會需要更換弦，
-                挑選弦常見的直徑會有：0.010～0.012英吋，
-                一般吉他彈奏會建議選擇0.010英吋。
-                ....</p>
-        </div>
+        <a href="./article.html">
+            <div class="featuredPost-title section-title-style title">精選文章</div>
+            <div class="featuredPost-image">
+                <img src="./img/formal/article20.jpg.png" alt="featuredPost photo" class="image">
+            </div>
+            <div class="textwrap">
+                <p class="time time-font-style">Mar 23
+                    2 min</p>
+                <h2 class="articleTitle">威仔要來跟大家分享配件挑選的小撇步們～</h2>
+                <p class="content">弦（$150～$600）
+                    當弦斷掉或生鏽時，會需要更換弦，
+                    挑選弦常見的直徑會有：0.010～0.012英吋，
+                    一般吉他彈奏會建議選擇0.010英吋。
+                    ....</p>
+            </div>
+        </a>
     </section>
     <section class="newpostMail d-flex">
-        <span class="title">Never Miss a New Post.</span>
-        <div class="mailInput">
+        <span class="title">不要錯過我們新的資訊喔!</span>
+        <div class="mailInput ">
             <div class="text">輸入你的 email*</div>
-            <input type="text" class="inputbox">
-            <a href="#" class="subscribe-btn">Subscribe</a>
+            <div class="d-flex ai-c">
+                <input type="text" class="inputbox">
+                <button type="button" class="btn subscribe-btn">Subscribe</button>
+            </div>
         </div>
     </section>
     <div class="main d-flex">
         <section class="list-section">
             <div class="list-container">
-                <h5 class="list-title section-title-style">
-                    TRAIN OF THOUGHT</h5>
+                <h5 class="list-title section-title-style title">
+                    幫助你的學習資訊</h5>
                 <ul class="card-list">
-                    <li class="card d-flex bd-1">
-                        <div class="image-container">
-                            <img src="/img/article1.jpg" alt="" class="image">
-                        </div>
-
-                        <div class="article">
-
-                            <p class="time time-font-style">Mar 23
-                                1 min</p>
-                            <div class="articleTitle">Do Not Leave Tokyo Before Eating This Ramen</div>
-                            <p class="content">Create a blog post subtitle that summarizes your post in a few short,
-                                punchy sentences and
-                                <span>...</span>
-                            </p>
-                            <div class="article-info d-flex">
-                                <span>
-                                    <span class="views">853 views</span>
-                                    <span class="comments">0 comments</span>
-                                </span>
-                                <span>
-                                    31<i class="fa-regular fa-heart icon"></i>
-                                </span>
+                    <li class="bd-1 mb-35">
+                        <a class="card d-flex" href="./article.html">
+                            <div class="image-container">
+                                <img src="/img/formal/article01.png" alt="" class="image">
                             </div>
-                        </div>
-                    </li>
-                    <li class="card d-flex bd-1">
-                        <div class="image-container">
-                            <img src="/img/article2.jpg" alt="" class="image">
-                        </div>
 
-                        <div class="article">
+                            <div class="article d-flex fxd-c">
 
-                            <p class="time time-font-style">Mar 23
-                                1 min</p>
-                            <div class="articleTitle">5 Songs That Make Me REALLY Happy</div>
-                            <p class="content">Create a blog post subtitle that summarizes your post in a few short,
-                                punchy sentences and
-                                <span>...</span>
-                            </p>
-                            <div class="article-info d-flex">
-                                <span>
-                                    <span class="views">304 views</span>
-                                    <span class="comments">13 comments</span>
-                                </span>
-                                <span>
-                                    31<i class="fa-regular fa-heart icon"></i>
-                                </span>
+                                <p class="time time-font-style">Mar 23
+                                    1 min</p>
+                                <div class="articleTitle title">來談談慢歌的8 beat節奏</div>
+                                <p class="content">慢歌的特徵有以下：
+                                    俗稱：抒情歌、芭樂歌(Ballad)、民謠、Slow Soul…
+                                    在4/4拍的音樂中，會以八分音符為主要構成要素
+                                    <span>...</span>
+                                </p>
+                                <div class="article-info d-flex">
+                                    <span>
+                                        <span class="views">853 views</span>
+                                        <span class="comments">0 comments</span>
+                                    </span>
+                                    <span>
+                                        31<i class="fa-regular fa-heart icon"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </li>
-                    <li class="card d-flex bd-1">
-                        <div class="image-container">
-                            <img src="/img/article3.jpg" alt="" class="image">
-                        </div>
-
-                        <div class="article">
-
-                            <p class="time time-font-style">Mar 23
-                                2 min</p>
-                            <div class="articleTitle">Amsterdam 101: Redefining The French Fries</div>
-                            <p class="content">Create a blog post subtitle that summarizes your post in a few short,
-                                punchy sentences and
-                                <span>...</span>
-                            </p>
-                            <div class="article-info d-flex">
-                                <span>
-                                    <span class="views">206 views</span>
-                                    <span class="comments">0 comments</span>
-                                </span>
-                                <span>
-                                    12<i class="fa-regular fa-heart icon"></i>
-                                </span>
+                    <li class="mb-35 bd-1">
+                        <a class="card d-flex" href="./article.html">
+                            <div class="image-container">
+                                <img src="/img/formal/article02.png" alt="" class="image">
                             </div>
-                        </div>
-                    </li>
-                    <li class="card d-flex bd-1">
-                        <div class="image-container">
-                            <img src="/img/article4.jpg" alt="" class="image">
-                        </div>
 
-                        <div class="article">
-
-                            <p class="time time-font-style">Mar 23
-                                1 min</p>
-                            <div class="articleTitle">Turkey: Unique Festivals You Must Visit</div>
-                            <p class="content">Create a blog post subtitle that summarizes your post in a few short,
-                                punchy sentences and entices your audience to continue
-                                <span>...</span>
-                            </p>
-                            <div class="article-info d-flex">
-                                <span>
-                                    <span class="views">185 views</span>
-                                    <span class="comments">0 comments</span>
-                                </span>
-                                <span>
-                                    11<i class="fa-regular fa-heart icon"></i>
-                                </span>
+                            <div class="article d-flex fxd-c">
+                                <p class="time time-font-style">Mar 23
+                                    1 min</p>
+                                <div class="articleTitle">什麼是三和弦?</div>
+                                <p class="content">
+                                    三和弦分成大三和弦(Major)及小三和弦(Minor)，
+                                    大三和弦（表示方式有：Cmaj、C∆、CM）
+                                    聽起來的感覺是明亮、正面的
+                                    組成音：根音、大三度
+                                    <span>...</span>
+                                </p>
+                                <div class="article-info d-flex">
+                                    <span>
+                                        <span class="views">304 views</span>
+                                        <span class="comments">13 comments</span>
+                                    </span>
+                                    <span>
+                                        31<i class="fa-regular fa-heart icon"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </li>
-                    <li class="card d-flex bd-1">
-                        <div class="image-container">
-                            <img src="/img/article5.jpg" alt="" class="image">
-                        </div>
-
-                        <div class="article">
-
-                            <p class="time time-font-style">Mar 23
-                                1 min</p>
-                            <div class="articleTitle">Paris: Secrets Only The Locals Can Tell You</div>
-                            <p class="content">Create a blog post subtitle that summarizes your post in a few short,
-                                punchy sentences and
-                                <span>...</span>
-                            </p>
-                            <div class="article-info d-flex">
-                                <span>
-                                    <span class="views">159 views</span>
-                                    <span class="comments">3 comments</span>
-                                </span>
-                                <span>
-                                    31<i class="fa-regular fa-heart icon"></i>
-                                </span>
+                    <li class="mb-35 bd-1">
+                        <a class="card d-flex" href="./article.html">
+                            <div class="image-container">
+                                <img src="/img/formal/article03.png" alt="" class="image">
                             </div>
-                        </div>
-                    </li>
-                    <li class="card d-flex bd-1">
-                        <div class="image-container">
-                            <img src="/img/article6.jpg" alt="" class="image">
-                        </div>
 
-                        <div class="article">
+                            <div class="article d-flex fxd-c">
 
-                            <p class="time time-font-style">Mar 23
-                                2 min</p>
-                            <div class="articleTitle">Back to Fiction: What I'm Reading This Summer</div>
-                            <p class="content">Create a blog post subtitle that summarizes your post in a few short,
-                                punchy sentences and
-                                <span>...</span>
-                            </p>
-                            <div class="article-info d-flex">
-                                <span>
-                                    <span class="views">1441 views</span>
-                                    <span class="comments">0 comments</span>
-                                </span>
-                                <span>
-                                    6<i class="fa-regular fa-heart icon"></i>
-                                </span>
+                                <p class="time time-font-style">Mar 23
+                                    2 min</p>
+                                <div class="articleTitle">彈奏吉他時，會提到的重音和輕音是什麼呢？</div>
+                                <p class="content">先來看看在吉他譜上重音和輕音的表示方式，
+                                    重音會是一個X的符號，
+                                    表示只刷4、5、6弦。
+                                    ＊重音會根據和弦的根音有所調整喔！
+                                    例如：C和弦的重音
+                                    <span>...</span>
+                                </p>
+                                <div class="article-info d-flex">
+                                    <span>
+                                        <span class="views">206 views</span>
+                                        <span class="comments">0 comments</span>
+                                    </span>
+                                    <span>
+                                        12<i class="fa-regular fa-heart icon"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </li>
-                    <li class="card d-flex bd-1">
-                        <div class="image-container">
-                            <img src="/img/article7.jpg" alt="" class="image">
-                        </div>
-
-                        <div class="article">
-
-                            <p class="time time-font-style">Mar 23
-                                1 min</p>
-                            <div class="articleTitle">Best Podcasts to Listen to When Traveling</div>
-                            <p class="content">Create a blog post subtitle that summarizes your post in a few short,
-                                punchy sentences and
-                                <span>...</span>
-                            </p>
-                            <div class="article-info d-flex">
-                                <span>
-                                    <span class="views">151 views</span>
-                                    <span class="comments">0 comments</span>
-                                </span>
-                                <span>
-                                    4<i class="fa-regular fa-heart icon"></i>
-                                </span>
+                    <li class="mb-35 bd-1">
+                        <a class="card d-flex" href="./article.html">
+                            <div class="image-container">
+                                <img src="/img/formal/article04.png" alt="" class="image">
                             </div>
-                        </div>
+
+                            <div class="article d-flex fxd-c">
+
+                                <p class="time time-font-style">Mar 23
+                                    1 min</p>
+                                <div class="articleTitle">來和威仔一起單音練習吧！</div>
+                                <p class="content">Step1: 先用自己隨意的速度彈奏練習
+                                    Step2: 嘗試用腳打節拍（4beat節奏）
+                                    →以一小節4拍為單位練習
+                                    →通常會使用左腳打節拍，避免影響吉他的彈
+                                    *bpm：beat per minute
+                                    <span>...</span>
+                                </p>
+                                <div class="article-info d-flex">
+                                    <span>
+                                        <span class="views">185 views</span>
+                                        <span class="comments">0 comments</span>
+                                    </span>
+                                    <span>
+                                        11<i class="fa-regular fa-heart icon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
                     </li>
+                    <li class="card d-flex mb-35 bd-1">
+                        <a class="card d-flex" href="./article.html">
+                            <div class="image-container">
+                                <img src="/img/formal/article05.png" alt="" class="image">
+                            </div>
+
+                            <div class="article d-flex fxd-c">
+                                <p class="time time-font-style">Mar 23
+                                    1 min</p>
+                                <div class="articleTitle">工欲善其事，必先利其器！</div>
+                                <p class="content">
+                                    吉他(Guitar)是一種彈撥樂器，通常有六條弦，
+                                    主要分為三個部份：琴身、琴頸、琴頭
+                                    <span>...</span>
+                                </p>
+                                <div class="article-info d-flex">
+                                    <span>
+                                        <span class="views">304 views</span>
+                                        <span class="comments">13 comments</span>
+                                    </span>
+                                    <span>
+                                        31<i class="fa-regular fa-heart icon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card d-flex mb-35 bd-1">
+                        <a class="card d-flex" href="./article.html">
+                            <div class="image-container">
+                                <img src="/img/formal/article06.png" alt="" class="image">
+                            </div>
+
+                            <div class="article d-flex fxd-c">
+
+                                <p class="time time-font-style">Mar 23
+                                    2 min</p>
+                                <div class="articleTitle">學吉他的理由是什麼呢？</div>
+                                <p class="content">不知道大家想學吉他的理由是什麼呢？
+                                    是熱愛表演、想自彈自唱、
+                                    想告白、培養興趣、
+                                    想組團或是為了追隨偶像呢？
+
+                                    威仔是因為喜歡唱歌，
+
+                                    <span>...</span>
+                                </p>
+                                <div class="article-info d-flex">
+                                    <span>
+                                        <span class="views">206 views</span>
+                                        <span class="comments">0 comments</span>
+                                    </span>
+                                    <span>
+                                        12<i class="fa-regular fa-heart icon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="card d-flex mb-35 bd-1">
+                        <a class="card d-flex" href="./article.html">
+                            <div class="image-container">
+                                <img src="/img/formal/article07.png" alt="" class="image">
+                            </div>
+
+                            <div class="article d-flex fxd-c">
+
+                                <p class="time time-font-style">Mar 23
+                                    1 min</p>
+                                <div class="articleTitle">pick來練習正反拍彈奏</div>
+                                <p class="content">首先來教大家pick的握法，
+                                    1.pick的上緣（平緩的那側）要對齊大拇指內側
+                                    2.用食指捏住，食指指尖可以向內或向
+                                    <span>...</span>
+                                </p>
+                                <div class="article-info d-flex">
+                                    <span>
+                                        <span class="views">185 views</span>
+                                        <span class="comments">0 comments</span>
+                                    </span>
+                                    <span>
+                                        11<i class="fa-regular fa-heart icon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
                 </ul>
                 <div class="btn-container">
-                    <a href="#" class="btn morePosts-btn">More Posts</a>
+                    <a href="./myBlog.html" class="btn morePosts-btn">More Posts</a>
                 </div>
             </div>
         </section>
@@ -247,30 +281,49 @@
             <div class="aboutMe m0-auto aside-w">
                 <h5 class="title section-title-style">
                     ABOUT ME</h5>
-                 <div class="image-container">
+                <div class="image-container">
                     <img src="./img/myPhoto.jpg" alt="reader photo">
-                 </div> 
-                 <p class="content">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>  
-                 <a href="#" class="readMeLink content">Read More ></a>
+                </div>
+                <p class="content">Hello~我是威仔老師，是一位專門吉他彈唱教學的職業音樂人，熱衷於吉他的教學，有在youtub上製作自己的教學影音與cover，曾經在【產投方案xMCU
+                    流行吉他彈唱班]擔當三期講師工作，目前也擔當科技公司的熱音社指導老師...無論如何，期待能幫助你順利越過各種吉他學習的困難</p>
+                <a href="./about.html" class="readMeLink content">Read More ></a>
             </div>
             <div class="followMe m0-auto aside-w">
-                <h5 class="title section-title-style">FOLLOW ME</h5>
+                <h5 class="title section-title-style">LEARN MORE</h5>
                 <div class="d-flex menu">
                     <div class="image-container">
-                        <img src="./img/01.jpg" alt="">
-                        <a class="content" href="">@wix: #wix, #website, #freewebsite,</a>
+                        <img src="./img/formal/aside/img (1).png" alt="">
+                        <a class="content" href="">: #wix, #website, #freewebsite,</a>
                     </div>
-                    <div class="image-container"><img src="./img/02.jpg" alt=""><a class="content" href="">@wix: #wix, #website, #freewebsite,</a></div>
-                    <div class="image-container"><img src="./img/03.jpg" alt=""><a class="content" href="">@wix: #wix, #website, #freewebsite,</a></div>
-                    <div class="image-container"><img src="./img/04.jpg" alt=""><a class="content" href="">@wix: #wix, #website, #freewebsite,</a></div>
-                    <div class="image-container"><img src="./img/05.jpg" alt=""><a class="content" href="">@wix: #wix, #website, #freewebsite,</a></img></div>
-                    <div class="image-container"><img src="./img/06.jpg" alt=""><a class="content" href="">@wix: #wix, #website, #freewebsite,</a></img></div>
-                    <div class="image-container"><img src="./img/07.jpg" alt=""><a class="content" href="">@wix: #wix, #website, #freewebsite,</a></img></div>
-                    <div class="image-container"><img src="./img/08.jpg" alt=""><a class="content" href="">@wix: #wix, #website, #freewebsite,</a></img></div>
-                    <div class="image-container"><img src="./img/09.jpg" alt=""><a class="content" href="">@wix: #wix, #website, #freewebsite,</a></img></div>
-                    <div class="image-container"><img src="./img/10.jpg" alt=""><a class="content" href="">@wix: #wix, #website, #freewebsite,</a></img></div>
+                    <div class="image-container"><img src="./img/formal/aside/img (2).png" alt=""><a class="content"
+                            href="">#wix,
+                            #website, #freewebsite,</a></div>
+                    <div class="image-container"><img src="./img/formal/aside/img (3).png" alt=""><a class="content"
+                            href="">#wix,
+                            #website, #freewebsite,</a></div>
+                    <div class="image-container"><img src="./img/formal/aside/img (4).png" alt=""><a class="content"
+                            href="">#wix,
+                            #website, #freewebsite,</a></div>
+                    <div class="image-container"><img src="./img/formal/aside/img (5).png" alt=""><a class="content"
+                            href="">#wix,
+                            #website, #freewebsite,</a></img></div>
+                    <div class="image-container"><img src="./img/formal/aside/img (6).png" alt=""><a class="content"
+                            href="">#wix,
+                            #website, #freewebsite,</a></img></div>
+                    <div class="image-container"><img src="./img/formal/aside/img (7).png" alt=""><a class="content"
+                            href="">#wix,
+                            #website, #freewebsite,</a></img></div>
+                    <div class="image-container"><img src="./img/formal/aside/img (8).png" alt=""><a class="content"
+                            href="">#wix,
+                            #website, #freewebsite,</a></img></div>
+                    <div class="image-container"><img src="./img/formal/aside/img (9).png" alt=""><a class="content"
+                            href="">#wix,
+                            #website, #freewebsite,</a></img></div>
+                    <div class="image-container"><img src="./img/formal/aside/img (10).png" alt=""><a class="content"
+                            href="">#wix,
+                            #website, #freewebsite,</a></img></div>
                 </div>
-                
+
             </div>
             <div class="link-item m0-auto aside-w d-flex">
                 <a href="https://www.facebook.com/liam9930"><i class="fa-brands fa-facebook-f"></i></a>
@@ -286,20 +339,24 @@
             </div>
             <div class="mypick m0-auto aside-w">
                 <div class="title-container">
-                <h5 class="title section-title-style">MY PICK</h5>
-                <h5 class="title section-title-style">OF THE MONTH</h5>
+                    <h5 class="title section-title-style">每月一次</br>
+                        吉他手的讀書會</h5>
                 </div>
-                <div class="image-container"><img src="./img/books new smaller.jpg" alt="book photo"></div>
-                
-                <p class="content mY-50">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                <div class="image-container"><img src="./img/formal/aside/see-no-evil-g30fac3f47_1280.jpg"
+                        alt="book photo"></div>
+
+                <p class="content mt-50 mb-50">
+                    彈唱練習最常發生的問題就是急於求成，結果就是進步速度緩慢，而且進而影響自己的學習心情，「我是不是沒有天賦」你開始問自己，這個月的課題就是寫下自己的目標，然後把中間分成五步，告訴如何執行
+
+                </p>
             </div>
         </aside>
     </div>
-    <div class="dropMeALine d-flex">
+    <div id="Contact" class="dropMeALine d-flex">
         <div class="svg-container">
             <a href="#header"><i class="fa-solid fa-arrow-up-long fa-xl"></i></a>
         </div>
-        <h2>Drop Me a Line, Let Me Know What You Think</h2>
+        <h2>留下你的足跡，讓我知道你的想法</h2>
         <div class="feedbackInfo d-flex">
             <div class="name d-flex">
                 <div class="firstName">
@@ -319,7 +376,7 @@
                 <p class="text">Message...</p>
                 <input class="input" type="text">
             </div>
-            
+
         </div>
         <a href="#" class="btn">Submit</a>
 
@@ -327,11 +384,11 @@
 
     <div class="footer">© 2035 by Train of Thoughts. Powered and secured by Wix</div>
 
-    
 
 
-    
-    
+
+
+
 
 
 </body>

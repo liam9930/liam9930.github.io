@@ -38,6 +38,12 @@
         height:50px;
         border: none;
         border-bottom: 1px solid #000;
+        font-size: 20px;
+        outline: none;
+        &:focus,&:hover{
+            border-width: 2px;
+            border-color: #6600ed;
+        }
     }
     .btn{
         width: 256px;

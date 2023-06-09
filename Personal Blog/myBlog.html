@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Blog</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/all.css">
@@ -14,15 +14,15 @@
 
 <body>
     <header id="header" class="header d-flex">
-        <h1 class="header-title text-center"><a href="">Train of Thought</a></h1>
-        <h2 class="header-subtitle text-center">EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</h2>
+        <h1 class="header-title text-center mt-20"><a href="">威仔吉他教學</a></h1>
+        <h2 class="header-subtitle text-center">持續激勵你對學習吉他的熱情</h2>
     </header>
     <nav class="nav">
         <ul class="navlist d-flex text-center">
-            <li class="navlist-item item-layout"><a href="#">Home</a></li>
-            <li class="navlist-item item-layout "><a href="#">About</a></li>
-            <li class="navlist-item item-layout"><a href="#" class="selected">My Blog</a></li>
-            <li class="navlist-item item-layout"><a href="#Contact">Contact</a></li>
+            <li class="navlist-item item-layout"><a href="./home.html">Home</a></li>
+            <li class="navlist-item item-layout "><a href="./about.html">About</a></li>
+            <li class="navlist-item item-layout"><a href="./myBlog.html" class="selected">My Blog</a></li>
+            <li class="navlist-item item-layout"><a href="./home.html#Contact">Contact</a></li>
             <li class="search-item d-flex item-layout">
                 <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
             </li>
@@ -35,325 +35,353 @@
         </ul>
     </nav>
     <main>
-        <div class="myBlog container">
+        <section class="myBlog container">
             <ul class="myBlog-menu d-flex text-center">
                 <li class="item d-flex">
-                    <button class="btn-white">All Posts</button>
+                    <a class="btn-white" href="./myBlog.html">All Posts</a>
                 </li>
-                <li class="item d-flex ml-40"><button class="btn-white">Travel
-                    </button>
+                <li class="item d-flex ml-40">
+                    <a class="btn-white" href="./selection.html">My Top 4</a>
                 </li>
-                <li class="item d-flex ml-40"><button class="btn-white">My Top 5</button>
+                <li class="item d-flex ml-40">
+                    <a class="btn-white" href="./selection.html">小技巧</a>
                 </li>
-                <li class="item d-flex ml-40"><button class="btn-white">
-                        Art & Culture</button></li>
+                <li class="item d-flex ml-40">
+                    <a class="btn-white" href="./selection.html">樂理</a>
+                </li>
+            </ul>
+        </section>
+        <section class="container">
+            <ul class="myBlogcard-list d-flex .container">
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article01-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">來談談慢歌的8 beat節奏</p>
+                        <p class="content">慢歌的特徵有以下： 俗稱：抒情歌、芭樂歌(Ballad)、民謠、Slow Soul… 在4/4拍的音樂中，會以八分音符為主要構成要素<span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article02-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">什麼是三和弦?</p>
+                        <p class="content">三和弦分成大三和弦(Major)及小三和弦(Minor)， 大三和弦（表示方式有：Cmaj、C∆、CM） 聽起來的感覺是明亮、正面的 組成音：根音、大三度<span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article03-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">彈奏吉他時，會提到的重音和輕音是什麼呢？</p>
+                        <p class="content">先來看看在吉他譜上重音和輕音的表示方式， 重音會是一個X的符號， 表示只刷4、5、6弦。 ＊重音會根據和弦的根音有所調整喔！ 例如：C和弦的重音<span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article04-2.png" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">來和威仔一起單音練習吧！</p>
+                        <p class="content">Step1: 先用自己隨意的速度彈奏練習 Step2: 嘗試用腳打節拍（4beat節奏） →以一小節4拍為單位練習 →通常會使用左腳打節拍，避免影響吉他的彈 *bpm：beat per minute<span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article05-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">工欲善其事，必先利其器！</p>
+                        <p class="content">吉他(Guitar)是一種彈撥樂器，通常有六條弦， 主要分為三個部份：琴身、琴頸、琴頭<span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article06-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">學吉他的理由是什麼呢？</p>
+                        <p class="content">不知道大家想學吉他的理由是什麼呢？ 是熱愛表演、想自彈自唱、 想告白、培養興趣、 想組團或是為了追隨偶像呢？ 威仔是因為喜歡唱歌，<span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article07-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">pick來練習正反拍彈奏</p>
+                        <p class="content">首先來教大家pick的握法， 1.pick的上緣（平緩的那側）要對齊大拇指內側 2.用食指捏住，食指指尖可以向內或向<span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article08-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">全音&半音是什麼意思呢？</p>
+                        <p class="content">以鋼琴來解釋的話，
+                            兩個白鍵中間有夾一個黑鍵的音的距離，
+                            我們稱為全音。
+                            兩個白鍵中間沒有夾黑鍵的音的距離，
+                            我們稱為半音。
+                            （可以參考上方的圖片來做對照喔！）<span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article09-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">吉他的6條弦分別是那些音?</p>
+                        <p class="content">還有什麼是Mi型音階～
+                            吉他的6條弦由粗到細為第6弦～第1弦
+                            各條弦的音為E-A-D-G-B-E
+                            而Mi型音階又是什麼呢？
+                            其實吉他的指型有很多種，
+                            Mi型音階是最基本的一種，
+                           <span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article10-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">慢歌的8 beat節奏</p>
+                        <p class="content">慢歌的特徵有以下：
+                            俗稱：抒情歌、芭樂歌(Ballad)、民謠、Slow Soul…
+                            在4/4拍的音樂中，會以八分音符為主要構成要素
+                            
+                            在吉他上的練習方法，會使用：
+                            腳踩4 beat
+                            手彈8 beat
+                            這樣的方式來進行喔！<span>...</span></p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article11-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">配件挑選的小撇步</p>
+                        <p class="content">3.Capo夾
+                            常聽到的Capo夾，就是移調夾～
+                            當我們彈奏吉他時，需要轉調或升key時可以使用。
+                            有彈簧設計的會比較方便使用喔！
+                            
+                            4.吉他架（$200～$600）
+                            當我們放置吉他時，建議使用吉他架，
+                            或是躺平放在地上，避免琴頸斷掉。</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="image-container"><img src="./img/formal/article12-2.jpg" alt="" class="image"></div>
+                    <div class="content-container">
+                        <div class="time-container d-flex ">
+                            <ul class="time d-flex">
+                                <li class="date">Mar 23</li>
+                                <li class="dot">‧</li>
+                                <li class="howLong">1 min</li>
+                            </ul>
+                            <div class="share-container">
+                                <span class="material-symbols-outlined icon">
+                                    more_vert
+                                </span>
+                                <div class="sharePost d-flex">
+                                    <i class="fa-solid fa-share"></i>
+                                    <span class="text">share Post</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="title">什麼是音符🎵</p>
+                        <p class="content">音符是組成音樂的最小單位，
+                            也是記錄音樂軌跡的文字。
+                            
+                            音符主要可以分為全音符、二分音符、
+                            四分音符、八分音符、十六分音符等。
+                            若以全音符當作1，
+                            二分音符就是1/2
+                            四分音符就是1/4（以此類推）。
+                            
+                            有時我們會看到音符旁邊有個小黑點，
+                            那不是印刷問題唷！
+                            那個小黑點我們稱做附點，
+                            <span>...</span></p>
+                    </div>
+                </li>
+
 
             </ul>
-            <ul class="card-list d-flex .container">
-                <li class="card">
-                    <div class="image-container"><img src="./img/article1-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">Do Not Leave Tokyo Before Eating This Ramen</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article2-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">5 Songs That Make Me REALLY Happy</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article3-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">Amsterdam 101: Redefining The French Fries</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article4-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">Turkey: Unique Festivals You Must Visit</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article5-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">Paris: Secrets Only The Locals Can Tell You</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article6-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">Back to Fiction: What I'm Reading This Summer</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article7-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">Best Podcasts to Listen to When Traveling</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article8-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">Movies That Need to Be Seen on the Big Screen</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article9-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">This Artist Will Blow Your Mind</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article10-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">5 Questions to Ask Yourself Before Getting Married</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article11-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">Top 5 Items Under 20$ I Can't Live Without</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="image-container"><img src="./img/article12-2.jpg" alt="" class="image"></div>
-                    <div class="content-container">
-                        <div class="time-container d-flex ">
-                            <ul class="time d-flex">
-                                <li class="date">Mar 23</li>
-                                <li class="dot">‧</li>
-                                <li class="howLong">1 min</li>
-                            </ul>
-                            <div class="share-container">
-                                <span class="material-symbols-outlined icon">
-                                    more_vert
-                                </span>
-                                <div class="sharePost d-flex">
-                                    <i class="fa-solid fa-share"></i>
-                                    <span class="text">share Post</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="title">5 Pizza Places You Must Know</p>
-                        <p class="content">Create a blog post subtitle that summarizes your post in a few short, punchy
-                            sentences and entices your audience to continue reading....</p>
-                    </div>
-                </li>
-
-
-            </ul>
-        </div>
+        </section>
         </li>
 
         </ul>

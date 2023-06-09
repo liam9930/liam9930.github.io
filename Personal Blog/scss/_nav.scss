@@ -1,13 +1,10 @@
 .navlist {
     font-family: $h3;
-    font-size: 14px;
+    font-size: 20px;
     width: 95vw;
-    margin: 0 auto;
     justify-content: center;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-
-
     .selected {
         color: #6600ed;
     }
@@ -15,21 +12,33 @@
 
 
 .item-layout {
-    width: 167px;
     border-left: 1px solid #000;
     align-items: center;
     justify-content: center;
 }
 
-.search-item input {
+.search-item {
+    input {
     width: 75%;
     border: none;
     outline: none;
+    font-size: 20px;
+    height:100%;
+    width:164px;
+    padding-left: 10px;
+    font-family: $h1;
+    }
+    .icon{
+        margin-right: 10px;
+    }
 }
 
 .link-item {
     justify-content: space-evenly;
     border-right: 1px solid #000;
+    a{
+        padding: 10px 15px;
+    }
 
     i {
         font-size: 19px;
