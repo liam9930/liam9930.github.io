@@ -158,7 +158,7 @@ img {
 }
 @font-face {
   font-family: "GenYoMin";
-  src: url("/fonts/GenYoMin-B.ttc") format("truetype");
+  src: url("/fonts/GenYoMinTW-B-01.ttf") format("truetype");
 }
 body {
   font-family: "Noto Sans TC", sans-serif;
