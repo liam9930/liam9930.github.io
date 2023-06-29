@@ -1,0 +1,37 @@
+.bannerTop{
+    background-image: url(../img/home/banner_top.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 870px;
+    color:#fff;
+    .container{
+        height:100%;
+    }
+    .text-container{
+        width: 355px;
+        height:auto;
+    }
+    .title{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .content{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width:767px){
+    .bannerTop{
+        height:480px;
+        .title{
+            font-size: 32px;
+        }
+        .content{
+            font-size: 20px;
+        }
+        
+    }
+   
+    
+}

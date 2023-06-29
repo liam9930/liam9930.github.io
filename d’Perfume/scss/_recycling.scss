@@ -1,0 +1,24 @@
+.recycling{
+    .text-container{
+        margin-left: 30px;
+        width:350px;
+    }
+    .title{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .subTitle,.content{
+        margin-bottom: 16px;
+    }
+
+}
+
+@media(max-width:767px) {
+   .recycling{
+    display: block;
+    .text-container{
+        margin-left: 0;
+       }
+   }
+  
+}

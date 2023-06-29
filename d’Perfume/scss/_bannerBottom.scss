@@ -1,0 +1,46 @@
+.bannerBottom{
+    background-image: url(../img/home/banner_bottom.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
+    height: 600px;
+    color:#8D8D8D;
+    .title{
+        font-size: 32px;
+        padding-top: 312px;
+    }
+    .inputBox{
+        font-size: 16px;
+    }
+
+    .btn-email{
+        width: 131px;
+        border-radius: 0 4px 4px 0;
+        border: 2px solid #916000;
+        background-color: #916000;
+        color: #fff;
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+    .inputEmail{
+        width:219px;
+        border-radius: 4px 0 0 4px;
+        outline: none;
+    }
+    .inputEmail,.btn-email{
+        height:60px;
+       
+    }
+}
+
+@media(max-width:767px) {
+    .inputEmail{
+        width:216px;
+    }
+    .btn-email{
+        width:129px;
+    }
+   
+ }

@@ -1,0 +1,33 @@
+.footer{
+    background-color: #916000;
+    color:#fff;
+    .logo{
+        width: 128px;
+        height: 38px;
+        background-image: url(../img/home/d’Perfumew.png);
+        text-indent: 101%;
+        overflow: hidden;
+        margin:20px 0;
+    }
+    .item,.text{
+        padding:28px 0px;
+    }
+    .text{
+        margin-left: 20px;
+    }
+    .menu>li{
+        margin-left: 36px;
+    }
+   
+}
+
+@media(max-width:767px) {
+   .footer{
+    .right{
+        display: none;
+    }
+    .text{
+        font-size: 14px;
+    }
+   }
+}

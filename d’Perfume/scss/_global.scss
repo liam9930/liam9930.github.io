@@ -1,0 +1,149 @@
+/* rwd ing css,可以當作css Reset其中一個*/
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*全域border-box*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+     "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 40;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+// @media(max-width:767px) {
+//     h2 {
+//         font-size: 20px;
+//     }
+
+//     h3 {
+//         font-size: 32px;
+//     }
+// }
+
+
+a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    
+    &:hover {
+        color: #cdcdcd;
+    }
+}
+
+button{
+    background-color: #fff;
+    border: none;
+    color: #8D8D8D;
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+
+.d-flex {
+    display: flex;
+}
+.fxd-c{
+    flex-direction: column;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-fe{
+    justify-content: flex-end;
+}
+.jc-c{
+    justify-content: center;
+}
+.fxw{
+    flex-wrap: wrap;
+}
+
+.ai-c{
+    align-items: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@media(max-width:767px) {
+    .container {
+        max-width: 345px;
+        margin: 0 auto;
+    }
+}
+
+.ol-a{
+    outline: auto;
+}
+
+.btn {
+    display: inline-block;
+    width:350px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
+    padding: 16px;
+
+    &:hover {
+        background-color: rgba(255,255,255,0.2);
+        cursor: pointer;
+        color:inherit;
+    }
+
+}
+
+@media(max-width:767px){
+    .btn{
+        width:100%;
+        padding: 13px;
+        font-size: 28px;
+        
+    }
+}
+
+.seeMore{
+    font-size: 16px;
+    color:#AC8A46 ;
+}
+
+.mt-60{
+    margin-top: 60px;
+}
+.mt-80{
+    margin-top: 80px;
+}
+
+.po-ab{
+    position: absolute;
+}
+.po-re{
+    position: relative;
+}
