@@ -2,8 +2,12 @@
     background-color: #916000;
 
     .item{
+        color: #fff;
         padding: 14px 0px;
         margin-right: 28px;
+        &:hover{
+            color:darken(#fff,20%)
+        }
     }
 }
 .allproductList{

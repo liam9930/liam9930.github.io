@@ -166,7 +166,7 @@ h3 {
 }
 
 a {
-  color: white;
+  color: #8D8D8D;
   text-decoration: none;
   display: block;
 }
@@ -582,6 +582,12 @@ button:hover {
 .footer .menu > li {
   margin-left: 36px;
 }
+.footer .item {
+  color: #fff;
+}
+.footer .item:hover {
+  color: #cccccc;
+}
 
 @media (max-width: 767px) {
   .footer .right {
@@ -595,8 +601,12 @@ button:hover {
   background-color: #916000;
 }
 .brandList .item {
+  color: #fff;
   padding: 14px 0px;
   margin-right: 28px;
+}
+.brandList .item:hover {
+  color: #cccccc;
 }
 
 .allproductList .image-container {

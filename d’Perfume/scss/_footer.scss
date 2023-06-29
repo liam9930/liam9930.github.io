@@ -18,6 +18,12 @@
     .menu>li{
         margin-left: 36px;
     }
+    .item{
+        color: #fff;
+        &:hover{
+            color: darken(#fff,20%);
+        }
+    }
    
 }
 
