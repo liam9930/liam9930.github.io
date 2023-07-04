@@ -153,8 +153,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   font-size: 20px;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 h2 {
@@ -171,7 +169,7 @@ a {
   display: block;
 }
 a:hover {
-  color: #cdcdcd;
+  color: #a4a3a3;
 }
 
 button {
@@ -230,14 +228,16 @@ button:hover {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   margin: 0 auto;
+  padding: 0px 15px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .container {
     max-width: 345px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 .ol-a {
@@ -260,7 +260,7 @@ button:hover {
   color: inherit;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .btn {
     width: 100%;
     padding: 13px;
@@ -270,6 +270,10 @@ button:hover {
 .seeMore {
   font-size: 16px;
   color: #AC8A46;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mt-60 {
@@ -360,7 +364,7 @@ button:hover {
   background: #a7a7a7;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   body {
     max-width: 375px;
   }
@@ -396,7 +400,7 @@ button:hover {
   margin-bottom: 16px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .bannerTop {
     height: 480px;
   }
@@ -411,10 +415,11 @@ button:hover {
   width: 50%;
 }
 .productSection .text-container {
+  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 110px;
+  width: 350px;
 }
 .productSection .title {
   font-size: 32px;
@@ -429,12 +434,26 @@ button:hover {
           flex-direction: row-reverse;
 }
 .productSection .btn-Plan {
-  display: none;
   font-size: 20px;
   color: #000;
   border: 2px solid black;
 }
+.productSection .productList-item:nth-child(4) .image-container {
+  overflow: hidden;
+  position: relative;
+}
+.productSection .productList-item:nth-child(4) .image-container .image {
+  position: absolute;
+  right: 0;
+  width: auto;
+  margin: 0 auto;
+  height: 100%;
+}
 
+.explanationList {
+  margin-top: 92px;
+  margin-bottom: 8px;
+}
 .explanationList .item {
   margin-bottom: 52px;
 }
@@ -443,8 +462,19 @@ button:hover {
   font-weight: 700;
   margin-bottom: 4px;
 }
+.explanationList .content {
+  font-size: 16px;
+}
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .productSection .text-container {
+    width: 50%;
+  }
+  .productSection .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
   .productSection .productList-item {
     display: block;
     margin-bottom: 32px;
@@ -467,8 +497,10 @@ button:hover {
   padding: 40px 0;
   background-color: #E0E0E0;
 }
+.specialSelection .card {
+  width: 0.3153153153;
+}
 .specialSelection .image-container {
-  width: 350px;
   margin-bottom: 8px;
   position: relative;
   overflow: hidden;
@@ -496,7 +528,7 @@ button:hover {
   height: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .specialSelection {
     padding: 32px 0px;
   }
@@ -528,8 +560,11 @@ button:hover {
 .recycling .subTitle, .recycling .content {
   margin-bottom: 16px;
 }
+.recycling .content {
+  font-size: 16px;
+}
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .recycling {
     display: block;
   }
@@ -561,6 +596,7 @@ button:hover {
 }
 .bannerBottom .btn-email:hover {
   cursor: pointer;
+  background-color: #c48200;
 }
 .bannerBottom .inputEmail {
   width: 219px;
@@ -571,7 +607,7 @@ button:hover {
   height: 60px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .inputEmail {
     width: 216px;
   }
@@ -607,7 +643,7 @@ button:hover {
   color: #cccccc;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .footer .right {
     display: none;
   }
@@ -632,10 +668,12 @@ button:hover {
   height: 255px;
   overflow: hidden;
 }
+.allproductList .cardList > li {
+  margin-bottom: 58px;
+}
 .allproductList .card {
   color: black;
   font-size: 16px;
-  margin-bottom: 58px;
 }
 .allproductList .card:hover img {
   -webkit-transform: scale(1.2);
@@ -661,7 +699,16 @@ button:hover {
   margin-right: 11px;
 }
 
-@media (max-width: 767px) {
+.pageList .item {
+  text-align: center;
+  margin-left: 20px;
+}
+.pageList .selected {
+  color: #AC8A46;
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
   .brandList {
     display: none;
   }

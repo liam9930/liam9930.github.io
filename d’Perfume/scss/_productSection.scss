@@ -3,8 +3,9 @@
         width:50%;
     }
     .text-container{
+        margin: 0 auto;
         justify-content: center;
-        padding:0 110px;
+        width:350px;
         
     }
     .title{
@@ -18,14 +19,28 @@
         flex-direction: row-reverse;
     }
     .btn-Plan{
-        display: none;
         font-size: 20px;     
         color: #000;
         border: 2px solid black;
     }
+    .productList-item:nth-child(4){
+        .image-container{
+            overflow: hidden;
+            position: relative;
+            .image{
+                position: absolute;
+                right:0;
+                width: auto;
+                margin: 0 auto;
+                height: 100%;
+            }
+        }
+    }
 
 }
 .explanationList{
+    margin-top: 92px;
+    margin-bottom: 8px;
     .item{
         margin-bottom: 52px;
     }
@@ -34,10 +49,24 @@
         font-weight: 700;
         margin-bottom: 4px;
     }
+    .content{
+       font-size: 16px;
+    }
     
 }
 
-@media(max-width:767px){
+@media(max-width:768px){
+    .productSection{
+        .text-container{
+            width: 50%;
+        }
+        .btn{
+            width:100%;
+        }
+    }
+}
+
+@media(max-width:576px){
 
     .productSection{
         .productList-item{
