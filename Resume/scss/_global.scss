@@ -1,0 +1,13 @@
+/* rwd ing css,可以當作css Reset其中一個*/
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*全域border-box*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

@@ -1,0 +1,121 @@
+@import "reset";
+@import "global";
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Castoro+Titling&display=swap');
+
+$gray:#efefef;
+$light-gray:#949494;
+$darkred:#AE0000;
+
+.bgc-gary{
+    background-color: $gray;
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.d-flex{
+    display: flex;
+}
+
+.ms-auto{
+    margin-left: auto;
+}
+
+
+body{
+    font-family:'Castoro', serif;
+    line-height: 1.5;
+    font-size: 24px;
+  
+}
+
+.container {
+ /* 使用 max-width 可以自適應瀏覽器畫面寬度*/
+ max-width: 1296px;
+ margin:0 auto;
+}
+.header{
+    font-size: 128px;
+    line-height: 192px;
+    letter-spacing: 0.12em;
+    .image-container{
+        margin: 0 auto;
+        width: 636px;
+        height: 848px;
+    }
+    .title{
+        padding-top: 160px;
+    }
+    
+    .resume{
+        text-align: right;
+    }
+    
+}
+
+.introduction{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    
+    .content{
+        width:636px;
+        font-size: 32px;
+    }
+}
+
+.main{
+  margin-top: 80px;
+    .menu{
+        width:636px
+    }
+    .title{
+        font-size: 40px;
+        color:$darkred;
+        border-bottom: 3px solid $darkred;
+        margin-top: 40px;
+    }
+    .year{
+        font-size: 20px;
+        font-style: italic;
+        color:$light-gray;
+    }
+    .info,.education-list,.work-list,.awards-list{
+        margin-top: 16px;
+    }
+    .info>li{
+        margin-top: 8px;
+    }
+   
+    .education-list>li,.work-list>li{
+        margin-top: 16px;
+    }
+    .awards-list>li{
+        margin-top: 12px;
+    }
+    .info>li:first-child,.education-list>li:first-child,.awards-list>li>li {
+        margin-top: 0px;
+    }
+
+
+
+}
+
+.footer{
+    background-color: #000;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 160px;
+    .icon-list{
+        justify-content: center;
+    }
+    
+    .icon-containe{
+        width:64px;
+        height:64px;
+        text-align: center;
+        margin-right: 40px;
+    }
+
+}
