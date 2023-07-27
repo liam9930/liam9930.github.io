@@ -1,0 +1,109 @@
+@import "reset";
+@import "global";
+
+.banner {
+    .image-container {
+        margin: 72px 24px 72px 0;
+        width: 636px;
+    }
+    .text-container{
+        margin-top: 232px;
+        font-size: 64px;
+    }
+    .name{
+        color:#00FFA3;
+    }
+    .first-letter{
+        font-size: 128px;
+    }
+    .btn{
+        padding: 12px 24px;
+        .arrorw-icon{
+            margin-left: 4px;
+        }
+    }
+}
+.introduction{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+    .text-container{
+        width:41.67%;
+        margin-right: 24px;
+    }
+    .image-container-sm{
+        width:128px;
+    }
+    .photo-list{
+        .item:nth-child(1),.item:nth-child(2){
+            width:196px;
+            margin-right: 24px;
+        }
+    }
+}
+
+.aboutMe{
+    background-color: #fff;
+    color: #000;
+    .card-list{
+        width:636px;
+        margin: 46px 0px;
+        .card{
+            width:306px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }       
+        .card:nth-child(3),.card:nth-child(4){
+            margin-bottom: 8px;
+        }
+        .number .title{
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+    }
+    .text-container{
+        width: 526px;
+        .content{
+            margin-top: 36px;
+           font-size: 24px; 
+        }
+    }
+}
+
+.contactMe{
+    padding: 92px 0px;
+    .title{
+        padding: 33px 0;
+    }
+    
+    .icon-container{
+       width:100px;
+       margin-left: 16px;
+    }
+    .socialIcon{
+        width:162px;
+        margin-left: 20px;
+    }
+}
+.myProject{
+    background-color: #fff;
+    color: #000;
+    .title{
+        width:746px;
+        margin-left: auto;
+        margin-bottom: 16px;
+    }
+    .left{
+        width: 416px;
+    }
+
+    .right{
+        width: 856px;
+    }
+    .text-container{
+        width: 636px;
+    }
+
+}
+.footer{
+    text-align: center;
+    padding:40px 0px;
+}

@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* rwd ing css,可以當作css Reset其中一個*/
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*全域border-box*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Bruno Ace SC", cursive;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 1.5;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-e {
+  text-align: right;
+}
+
+h1 {
+  font-size: 114px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.content {
+  font-size: 24px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  color: #cdcdcd;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fxw {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.d-none {
+  display: none;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.me-auto {
+  margin-right: auto;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-160 {
+  margin-top: 160px;
+}
+
+.py-160 {
+  padding: 160px 0;
+}
+
+.btn {
+  font-family: "Bruno Ace SC", cursive;
+  display: inline-block;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  border-radius: 32px;
+  padding: 12px 24px;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.btn:hover span {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn.btn-white {
+  border-color: #F2F2F2;
+  background: #fff;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.banner .image-container {
+  margin: 72px 24px 72px 0;
+  width: 636px;
+}
+.banner .text-container {
+  margin-top: 232px;
+  font-size: 64px;
+}
+.banner .name {
+  color: #00FFA3;
+}
+.banner .first-letter {
+  font-size: 128px;
+}
+.banner .btn {
+  padding: 12px 24px;
+}
+.banner .btn .arrorw-icon {
+  margin-left: 4px;
+}
+
+.introduction {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+}
+.introduction .text-container {
+  width: 41.67%;
+  margin-right: 24px;
+}
+.introduction .image-container-sm {
+  width: 128px;
+}
+.introduction .photo-list .item:nth-child(1), .introduction .photo-list .item:nth-child(2) {
+  width: 196px;
+  margin-right: 24px;
+}
+
+.aboutMe {
+  background-color: #fff;
+  color: #000;
+}
+.aboutMe .card-list {
+  width: 636px;
+  margin: 46px 0px;
+}
+.aboutMe .card-list .card {
+  width: 306px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.aboutMe .card-list .card:nth-child(3), .aboutMe .card-list .card:nth-child(4) {
+  margin-bottom: 8px;
+}
+.aboutMe .card-list .number .title {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.aboutMe .text-container {
+  width: 526px;
+}
+.aboutMe .text-container .content {
+  margin-top: 36px;
+  font-size: 24px;
+}
+
+.contactMe {
+  padding: 92px 0px;
+}
+.contactMe .title {
+  padding: 33px 0;
+}
+.contactMe .icon-container {
+  width: 100px;
+  margin-left: 16px;
+}
+.contactMe .socialIcon {
+  width: 162px;
+  margin-left: 20px;
+}
+
+.myProject {
+  background-color: #fff;
+  color: #000;
+}
+.myProject .title {
+  width: 746px;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+.myProject .left {
+  width: 416px;
+}
+.myProject .right {
+  width: 856px;
+}
+.myProject .text-container {
+  width: 636px;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 0px;
+}
