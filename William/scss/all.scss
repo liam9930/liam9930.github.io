@@ -1,0 +1,29 @@
+@import "_reset";
+@import "_global";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+
+
+.hi-Im{
+    padding-top: 72px;
+    padding-bottom: 72px;
+    .image-container{
+        width: 636px;
+    }
+    .text-container{
+        font-size: 64px;
+        .name{
+            text-align: right;
+            color:#00FFA3;
+        }
+        .firstLetter{
+            font-size: 128px;
+        }
+    }
+    .btn-container{
+        text-align: right;
+    }
+
+}

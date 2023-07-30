@@ -1,0 +1,99 @@
+/* rwd ing css,可以當作css Reset其中一個*/
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*全域border-box*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Bruno Ace SC', cursive;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+h1{
+    font-size: 92px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+
+
+.d-flex {
+    display: flex;
+}
+.fxd-c{
+    flex-direction: column;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-fe{
+    justify-content: flex-end;
+}
+.jc-c{
+    justify-content: center;
+}
+.fxw{
+    flex-wrap: wrap;
+}
+
+.ai-c{
+    align-items: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.ol-a{
+    outline: auto;
+}
+
+.btn {
+    display: inline-block;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 32px;
+
+}
+
+
+.mt-20{
+    margin-top: 20px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+
+.mt-60{
+    margin-top: 60px;
+}
+.mt-80{
+    margin-top: 80px;
+}
+
+.po-ab{
+    position: absolute;
+}
+.po-re{
+    position: relative;
+}
