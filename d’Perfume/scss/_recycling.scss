@@ -1,7 +1,7 @@
 .recycling{
     .text-container{
         margin-left: 30px;
-        max-width:350px;
+        width:350px;
     }
     .title{
         font-size: 32px;
@@ -16,7 +16,7 @@
 
 }
 
-@media(max-width:768px) {
+@media(max-width:576px) {
    .recycling{
     display: block;
     .text-container{
