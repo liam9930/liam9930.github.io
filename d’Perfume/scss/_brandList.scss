@@ -60,14 +60,14 @@
 }
 
 
-@media(max-width:768px) {
+@media(max-width:815px) {
     .brandList{
         display: none;
     }
     .allproductList{
         margin-top: 42px;
         .image-container{
-            width: 165px;
+            max-width: 165px;
             height:165px;
             overflow: hidden;
         }
@@ -77,5 +77,12 @@
             }
         }
 
+    }
+}
+@media(max-width:374px) {
+    .allproductList{
+        .cardList{
+            justify-content: center;
+        }
     }
 }
