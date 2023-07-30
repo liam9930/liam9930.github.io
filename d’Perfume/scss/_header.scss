@@ -69,10 +69,7 @@
     }
 
 }
-@media(max-width:576px){
-    body{
-        max-width: 375px;
-    }
+@media(max-width:768px){
     .header{
         .nav{
             display: none;
