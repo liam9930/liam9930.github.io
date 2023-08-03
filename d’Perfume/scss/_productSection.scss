@@ -28,10 +28,9 @@
             overflow: hidden;
             position: relative;
             .image{
-                position: absolute;
+                position: relative;
                 right:0;
                 width: auto;
-                margin: 0 auto;
                 height: 100%;
             }
         }
@@ -69,15 +68,22 @@
 @media(max-width:815px){
 
     .productSection{
+        margin-top: 40px;
         .productList-item{
             display: block;
             margin-bottom: 32px;
+            .image-container{
+                margin-bottom: 8px;
+            }
         }
         .image-container,.text-container{
             width:100%;
         }
         .text-container{
             padding:0px;
+            .content{
+                margin-bottom: 8px;
+            }
         }
         .title{
            font-weight: 700;
@@ -85,6 +91,19 @@
         .btn-Plan{
             display: block;
         }
+        .productList-item:nth-child(4){
+            .image-container .image{
+                width: 100%;                   
+            }
+        }
+        
     }
+    .explanationList{
+        margin-top: 8px;
+        .item{
+            margin-bottom: 20px;
+        }
+    }
+   
     
 }

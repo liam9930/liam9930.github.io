@@ -36,7 +36,10 @@
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:815px) {
+    .bannerBottom{
+        margin-top: 40px;
+    }
     .inputEmail{
         width:216px;
     }
