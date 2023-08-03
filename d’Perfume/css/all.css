@@ -367,7 +367,7 @@ button:hover {
   background: #a7a7a7;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 815px) {
   .header .nav {
     display: none;
   }
@@ -400,7 +400,7 @@ button:hover {
   margin-bottom: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 815px) {
   .bannerTop {
     height: 480px;
   }
@@ -466,7 +466,7 @@ button:hover {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 815px) {
   .productSection .text-container {
     width: 50%;
   }
@@ -474,7 +474,7 @@ button:hover {
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 815px) {
   .productSection .productList-item {
     display: block;
     margin-bottom: 32px;
